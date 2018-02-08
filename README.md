@@ -1,2 +1,1 @@
-# wcosaka2018-site
-本サイト用リポジトリ
+# WordCamop Osaka 2018 Publishing site.
