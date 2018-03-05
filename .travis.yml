@@ -30,7 +30,7 @@ after_success:
   - echo -e "\n\tIdentitiesOnly yes"         >> ~/.ssh/config
   - echo -e "\n\tForwardAgent yes"           >> ~/.ssh/config
   - git config --global user.email "osaka@wordcamp.org"
-  - git config --global user.name "Travis CI"
+  - git config --global user.name "sasagar"
   - git checkout -b master origin/master
   - git merge --no-ff develop
   - git push origin master
