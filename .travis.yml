@@ -23,6 +23,7 @@ install:
 before_script:
   - git checkout master
   - git merge --no-ff develop
+  - mkdir css
 
 script:
   - npm run sass
