@@ -1,0 +1,22 @@
+{
+  "name": "wcosaka2018-theme",
+  "version": "1.0.0",
+  "description": "Theme for WordCamp Osaka 2018",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass ./sass/* -o ./css/ --output-style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wcosaka2018/wcosaka2018-theme.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/wcosaka2018/wcosaka2018-theme/issues"
+  },
+  "homepage": "https://github.com/wcosaka2018/wcosaka2018-theme#readme"
+}
