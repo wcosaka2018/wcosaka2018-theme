@@ -22,5 +22,5 @@ after_success:
   - git config --global user.email "osaka@wordcamp.org"
   - git config --global user.name "Travis CI"
   - git checkout master
-  - git merge develop
+  - git merge --no-ff develop
   - get push origin master
