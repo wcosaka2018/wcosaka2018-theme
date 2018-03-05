@@ -7,9 +7,9 @@ branches:
     develop
 
 install:
-  - cd ../../
-  - git clone https://github.com/wcosaka2018/wcosaka2018-theme.git
-  - cd wcosaka2018/wcosaka2018-theme
+  - openssl aes-256-cbc -K $encrypted_d256d7c8628c_key -iv $encrypted_d256d7c8628c_iv -in sample_key.enc -out ~/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
+  - git pull --all
   - npm install -g node-sass
 
 before_script:
@@ -19,8 +19,6 @@ script:
   - npm run sass
 
 after_success:
-  - openssl aes-256-cbc -K $encrypted_d256d7c8628c_key -iv $encrypted_d256d7c8628c_iv -in sample_key.enc -out ~/.ssh/id_rsa -d
-  - chmod 600 ~/.ssh/id_rsa
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - git config --global user.email "osaka@wordcamp.org"
   - git config --global user.name "Travis CI"
