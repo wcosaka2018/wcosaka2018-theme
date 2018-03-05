@@ -21,7 +21,6 @@ after_success:
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - git config --global user.email "osaka@wordcamp.org"
   - git config --global user.name "Travis CI"
-  - git pull origin master
-  - git checkout master
+  - git checkout -b master origin/master
   - git merge --no-ff develop
   - git push origin master
