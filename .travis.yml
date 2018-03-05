@@ -23,4 +23,4 @@ after_success:
   - git config --global user.name "Travis CI"
   - git checkout master
   - git merge --no-ff develop
-  - get push origin master
+  - git push origin master
