@@ -1,7 +1,6 @@
 language: node_js
 node_js:
-- '0.11'
-- '0.10'
+- '6.11.2'
 
 branches:
   only:
@@ -22,4 +21,6 @@ after_success:
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   - git config --global user.email "osaka@wordcamp.org"
   - git config --global user.name "Travis CI"
+  - git checkout master
   - git merge develop
+  - get push origin master
