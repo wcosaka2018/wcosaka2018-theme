@@ -10,7 +10,7 @@ install:
   - cd ../../
   - rm -rf wcosaka2018
   - git clone https://github.com/wcosaka2018/wcosaka2018-theme.git
-  - cd wcosaka2018/wcosaka2018-theme
+  - cd wcosaka2018-theme
   - git branch
   - npm install -g node-sass
 
