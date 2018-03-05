@@ -2,9 +2,8 @@ language: node_js
 node_js:
 - '6.11.2'
 
-branches:
-  only:
-    develop
+git:
+  depth: false
 
 install:
   - npm install -g node-sass
