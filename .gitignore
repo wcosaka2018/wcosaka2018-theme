@@ -1,5 +1,5 @@
 .DS_Store
-css/*
+css/*.css
 node_modules
 sample_key
 sample_key.pub
