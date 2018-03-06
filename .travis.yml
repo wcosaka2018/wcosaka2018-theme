@@ -28,7 +28,5 @@ script:
   - npm run sass
 
 after_success:
-  - ls -a css/
-  - git add -f css/*
   - git commit -m "by Travis CI (JOB $TRAVIS_JOB_NUMBER)"
   - git push origin master
