@@ -22,13 +22,13 @@ install:
 
 before_script:
   - git checkout master
-  - git pull
-  - git reset --hard develop
+  - git merge --no-ff develop
 
 script:
   - npm run sass
 
 after_success:
+  - rm .travis.yml
   - git add ./docs/css/*
   - git add --all
   - git commit -m "by Travis CI (JOB $TRAVIS_JOB_NUMBER)"
