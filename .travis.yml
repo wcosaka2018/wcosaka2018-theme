@@ -33,7 +33,7 @@ script:
   - npm run sass
 
 after_success:
-  - git add ./docs/css/*
+  - git add -f ./docs/css/*
   - git add --all
   - git commit -m "by Travis CI (JOB $TRAVIS_JOB_NUMBER)"
   - git push origin master
