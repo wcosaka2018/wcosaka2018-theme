@@ -1,0 +1,12 @@
+div {
+  background-color: red;
+  margin: 0 auto;
+}
+
+div p {
+  padding: 0 0 0 10px;
+}
+
+div p span {
+  font-size: 2em;
+}
