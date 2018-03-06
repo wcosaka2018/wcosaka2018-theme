@@ -28,8 +28,6 @@ script:
   - npm run sass
 
 after_success:
-  - rm .travis.yml
-  - rm -rf ./css
-  - git add --all
+  - git add ./docs/css/*
   - git commit -m "by Travis CI (JOB $TRAVIS_JOB_NUMBER)"
   - git push origin master
