@@ -27,6 +27,7 @@ before_script:
   - git commit -m "Commit before Test (JOB $TRAVIS_JOB_NUMBER)"
   - git checkout master
   - git merge --no-ff develop
+  - mkdir ./docs/css
 
 script:
   - npm run sass
