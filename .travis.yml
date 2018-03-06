@@ -22,6 +22,7 @@ install:
 
 before_script:
   - git checkout master
+  - git pull
   - git reset --hard develop
 
 script:
