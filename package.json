@@ -8,7 +8,7 @@
   "devDependencies": {},
   "scripts": {
     "sass":
-      "node-sass ./scss/wcosaka2018.scss -o ./docs/css/wcosaka2018.css --output-style expanded"
+      "node-sass ./scss/wcosaka2018.scss -o ./docs/css/ --output-style expanded"
   },
   "repository": {
     "type": "git",
