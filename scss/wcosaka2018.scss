@@ -20,13 +20,19 @@
 		outline: none;
 		box-sizing: border-box;
 		cursor: pointer;
-		width:2.5em;
-		height:2.5em;
+		width:3em;
+		height:3em;
 		overflow: hidden;
 
 		.icon{
-			height:1.5em;
-			width:1.5em;
+			height:2em;
+			width:2em;
+		}
+		.icon-bars{
+			color:#fff;
+		}
+		.icon-close{
+			color:#333;
 		}
 	}
 		
@@ -69,10 +75,28 @@
 	}
 }
 
+.menu > li:last-child{
+	border: 1px solid #ccc;
+	display: block;
+	text-align: center;
+	margin: 10px 0;
+	padding: 0;
+	
+	a{
+		display: block;
+		padding: 10px 0;
+		color:#333;
+		background: #fafafa;
+		transition: all .2s;
+	}
+	a:hover{
+		background: #333;
+		color:#fff;
+	}
+}
 
 @media screen and (min-width: 48em) {
-	
-/*===header-menu===*/
+
 .navigation-top{
 	height: 70px;
 	box-shadow: 0 1px 5px -2px rgba(200,200,200,0.7);
@@ -97,7 +121,7 @@
 	}
 	
 	nav{
-		margin-left: 30px;
+		margin: 0 30px;
 	}
 }
 
@@ -162,30 +186,29 @@
 		}
 	}
 }	
+
+.menu > li:last-child{
+	border: none;
+	display: inline-block;
+	margin-top: 0px;
+	
+	a{
+		display: block;
+		padding: 0;
+		background: transparent;
+		transition: none;
+		padding: 0 10px;
+	}
+	a:hover{
+		background: #333;
+		color:#fafafa;
+	}
+}
+
 	
 .menu-scroll-down{
 	display: none !important;
-}
-
-	
-/*===main-visual===*/
-#wp-custom-header-video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width:100vw!important;
-	height:auto;
-}
-
-#masthead, .custom-header, .custom-header-media {
-    width: 100vw !important;
-    max-height: calc(100vw / 16 * 9) !important;
-}
-
-.wp-custom-header{
-    max-height: calc(100vw / 16 * 9) !important;
-}
-
+}	
 }
 
 @media screen and (min-width: 60em) {
@@ -199,3 +222,157 @@
 }
 	
 }
+
+/*==========================
+
+main-visual
+
+===========================*/
+
+#wp-custom-header-video {
+	display: none;
+	background: transparent;
+}
+
+.custom-header-media:before {
+	background: rgba(0,0,0,0.2);
+}
+
+.site-header{
+	height: 100vh;
+	.custom-header,
+	.custom-header-media{
+		height:100%!important;
+	}
+}
+
+#masthead {
+	background: url(../docs/images/main-bg-sp.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.wrap {
+    padding: 0 !important;
+    text-align: center;
+		.home {
+		 .site-title {
+			justify-content: center;
+			}
+		}
+	}
+}
+
+.wp-custom-header{
+	.wp-custom-header-video-button{
+		opacity: 0;
+	}
+}
+
+.site-branding {
+    margin: 0 !important;
+    padding: 0 !important;
+    top: 0;
+	
+	.wrap{
+		height:100%;
+	}
+}
+	
+.site-branding-text{
+	width:100%;
+	height:100%;
+	position: relative;
+	z-index:99997;
+	
+	.site-title{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+		a{
+    	background-image: url(../docs/images/pre-logo.png);
+			display: block;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center center;
+			width: 80vw;
+			height: 70px;
+			overflow: hidden;
+			text-indent: -300%;
+		}
+	}
+}
+
+.page-one-column{
+	.panel-content{
+		overflow: visible;
+		.wrap{
+			max-width: 1000px;
+		}
+	}
+}
+
+
+@media screen and (min-width: 24em) {
+.site-branding-text{
+	.site-title{
+		a{
+			width: 65vw;
+			height: 150px;
+		}
+	}
+}
+	
+}
+
+@media screen and (min-width: 48em) {
+
+#wp-custom-header-video {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height:auto;
+}
+
+.custom-header-media:before {
+	background: rgba(0, 0, 0 , 0.2);
+}	
+	
+#masthead, .custom-header, .custom-header-media {
+    max-height: calc(100vw / 16 * 9) !important;
+	background: #fafafa!important;
+}
+
+.wp-custom-header{
+	max-height: calc(100vw / 16 * 9) !important;
+	
+	.wp-custom-header-video-button{
+    position: absolute;
+    top: 100px;
+		border-radius: 50%;
+		z-index:10000;
+		opacity: 1;
+	}
+}
+	
+.html5-video-player:not(.ytp-transparent),
+.html5-video-player.ad-interrupting,
+.html5-video-player.ended-mode,
+.html5-video-player.ytp-fullscreen{
+		background: #fff!important;
+}
+	
+.site-branding-text{
+	.site-title{
+		a{
+			width: 50vw;
+			height: 200px;
+    }
+		}
+	}
+	
+}
+
