@@ -100,7 +100,6 @@
 
     .navigation-top{
         height: 70px;
-        box-shadow: 0 1px 5px -2px rgba(200,200,200,0.7);
         background: #fff;
 
         .wrap{
@@ -125,6 +124,10 @@
             margin: 0 30px;
         }
     }
+	
+		.navigation-top.site-navigation-fixed{
+				box-shadow: 0 1px 5px -2px rgba(200,200,200,0.7);
+		}
 
     .main-navigation{
         .menu{
