@@ -102,6 +102,10 @@
 	}
 }
 
+.social-navigation{
+	display: none;
+}
+
 @media screen and (min-width: 48em) {
 
 .navigation-top{
@@ -215,7 +219,38 @@
 	
 .menu-scroll-down{
 	display: none !important;
-}	
+}
+	
+.social-navigation{
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	z-index: 100000;
+	padding:15px 0;
+	width:auto;
+	margin-right: 30px;
+	a {
+		background: none;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		color: #ccc;
+		display: inline-block;
+		height: 40px;
+		margin: 0;
+		text-align: center;
+		width: 40px;
+	}
+	a:hover{
+		color: #333;
+		background: none;
+	}
+	.icon {
+		height: 20px;
+		width: 20px;
+	}	
+}
+	
 }
 
 @media screen and (min-width: 60em) {
@@ -424,7 +459,7 @@ front-page
 		padding-bottom:0.5em;
 		
 		h2{
-			margin-bottom: 3em;
+			margin-bottom: 1.5em;
 		}
 	}
 }
@@ -469,6 +504,13 @@ front-page
 	margin-left: -100px;
 	margin-right: -100px;
 	margin-top:-30px;
+		h3{
+			font-weight: 700!important;
+		}
+		h3 a:hover{
+			box-shadow: none!important;
+			-webkit-box-shadow:none!important;
+		}
 	}
 	article:nth-child(odd){
 		background-position: 100% 2px;
@@ -494,6 +536,7 @@ front-page
 		font-size:1.5rem!important;
 		color:#333!important;
 		text-transform: none!important;
+		margin-bottom: 1.5em;
 	}
 	a{
 		-webkit-box-shadow:none!important;
@@ -587,7 +630,9 @@ front-page
 	}
 }
 
-
+.social-navigation + .site-info{
+	margin-left: 0;
+}
 
 
 @media screen and (min-width: 30em) {
@@ -597,6 +642,9 @@ front-page
 	.detail{
 		padding-top:2em;
 		padding-bottom:3.5em;
+	}
+	h2{
+		margin-bottom: 1.5em;
 	}
 }
 }
@@ -680,6 +728,12 @@ front-page
 	}
 }
 
+.twentyseventeen-front-page.page-one-column{
+	.entry-header	{
+		margin-bottom: 1.5rem;
+	}
+}
+	
 /*sponsor*/
 .site-footer{
 	h2{
@@ -689,6 +743,7 @@ front-page
 		display: flex;
 		align-items: center;
 		text-align: center; /* for no-flexbox browsers */
+		margin-bottom: 3.0em;
 	}
 	h2:after {
 		border-top: 1px solid #ccc;
