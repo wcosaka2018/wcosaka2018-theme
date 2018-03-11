@@ -65,16 +65,38 @@
         display: inline-block;
     }
     .menu{
-        li{
+			border: none;
+			background: none;
+			display: block!important;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width:100%;
+		}
+	
+		.menu > li{
             border-bottom: none;
             padding: .5em 0;
+						display: none;
         }
-    }
+		.menu > li:not(.btn-join){
+						display: none;
+		}
 }
 
-.menu > li:last-child{
+.main-navigation.toggled-on{
+    .menu{
+			background:#fff;
+		}
+	
+		.menu > li{
+						display: block;
+    }	
+}
+
+.menu > li.join{
     border: 1px solid #ccc;
-    display: block;
+    display: none;
     text-align: center;
     margin: 10px 0;
     padding: 0;
@@ -82,8 +104,8 @@
     a{
         display: block;
         padding: 10px 0;
-        color:#333;
-        background: #fafafa;
+        color:#666;
+        background: #fff;
         transition: all .2s;
     }
     a:hover{
@@ -92,9 +114,38 @@
     }
 }
 
+.main-navigation.toggled-on{
+	.menu > li.join{
+		display: block;
+	}
+}
+
+.menu > li.btn-join{
+		display: block;
+    position: absolute;
+    top: 450px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+		z-index: -1;
+	
+	a{
+			color:#fff;
+			font-size:20px;
+			font-size: 1.25rem;
+			background: rgba(255, 102, 0, 1.0);
+			padding:10px 20px;
+	}
+	a:hover{
+			background: rgba(255, 150, 0, 1.0);
+	}
+	
+}
+
 .social-navigation{
     display: none;
 }
+
 
 @media screen and (min-width: 48em) {
 
@@ -127,6 +178,9 @@
 	
 		.navigation-top.site-navigation-fixed{
 				box-shadow: 0 1px 5px -2px rgba(200,200,200,0.7);
+				.menu > li.btn-join{
+						display: none!important;
+				}
 		}
 
     .main-navigation{
@@ -163,8 +217,11 @@
                 left:0;
             }
         }
+				.menu > li{
+					display: inline-block!important;
+				}
     }
-
+	
     .menu{
 
         ul{
@@ -191,7 +248,7 @@
         }
     }
 
-    .menu > li:last-child{
+    .menu > li.join{
         border: none;
         display: inline-block;
         margin-top: 0px;
@@ -209,7 +266,14 @@
         }
     }
 
-
+.menu > li.btn-join{
+    top: 340px;
+		a{
+				line-height: 40px;
+				padding: 10px 30px;
+		}
+}
+	
     .menu-scroll-down{
         display: none !important;
     }
@@ -246,6 +310,38 @@
 
 }
 
+@media screen and (min-width: 52em){
+	
+		.menu > li.btn-join{
+				top: 360px;
+		}
+	
+}
+
+@media screen and (min-width: 54em){
+	
+		.menu > li.btn-join{
+				top: 380px;
+		}	
+	
+}
+
+@media screen and (min-width: 56em){
+	
+		.menu > li.btn-join{
+				top: 400px;
+		}	
+	
+}
+
+@media screen and (min-width: 58em){
+	
+		.menu > li.btn-join{
+				top: 420px;
+		}	
+	
+}
+
 @media screen and (min-width: 60em) {
     .navigation-top{
         .wrap{
@@ -256,4 +352,23 @@
         }
     }
 
+	  .menu > li.join{
+
+        a{
+            padding: 0 20px;
+        }
+}
+	
+		.menu > li.btn-join{
+				top: 450px;
+		}
+	
+}
+
+@media screen and (min-width: 64em){
+	
+		.menu > li.btn-join{
+				top: 490px;
+		}	
+	
 }
