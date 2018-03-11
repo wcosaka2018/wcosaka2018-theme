@@ -60,19 +60,19 @@
 
 .sponsor-level.silver{
     .sponsor-logo{
-        width:50%;
+        width: calc(100% / 2);
     }
 }
 
 .sponsor-level.bronze{
     .sponsor-logo{
-        width:50%;
+        width: calc(100% / 2);
     }
 }
 
 .sponsor-level.micro{
     .sponsor-logo{
-        width:50%;
+        width: calc(100% / 2);
     }
 }
 
@@ -139,31 +139,31 @@
 
     .sponsor-level.platinum{
         .sponsor-logo{
-            width:50%;
+            width: calc(100% / 2);
         }
     }
 
     .sponsor-level.gold{
         .sponsor-logo{
-            width:33.33333333%;
+            width: calc(100% / 3);
         }
     }
 
     .sponsor-level.silver{
         .sponsor-logo{
-            width:25%;
+            width: calc(100% / 4);
         }
     }
 
     .sponsor-level.bronze{
         .sponsor-logo{
-            width:20%;
+            width: calc(100% / 5);
         }
     }
 
     .sponsor-level.micro{
         .sponsor-logo{
-            width:14.2857143%;
+            width: calc(100% / 7);
         }
     }
 
