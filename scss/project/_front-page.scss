@@ -7,14 +7,13 @@ front-page
 /*main-visual*/
 
 #wp-custom-header-video {
-    display: none;
+		display: none;
     background: transparent;
 }
 
 .site-header{
     height: 100vh;
-    .custom-header,
-    .custom-header-media{
+    .custom-header{
         height:100%!important;
     }
 }
@@ -49,6 +48,7 @@ front-page
     margin: 0 !important;
     padding: 0 !important;
     top: 0;
+		height: 100%;
 
     .wrap{
         height:100%;
@@ -129,7 +129,7 @@ front-page
     		left: 0;
     		width: 100%;
    			height: 101%;
-				display: block;
+				display: block!important;
 				min-width: 10px;
 				border: none;
     }	
@@ -143,13 +143,6 @@ front-page
             z-index:10000;
             opacity: 1;
         }
-    }
-
-    .html5-video-player:not(.ytp-transparent),
-    .html5-video-player.ad-interrupting,
-    .html5-video-player.ended-mode,
-    .html5-video-player.ytp-fullscreen{
-        background: #fff!important;
     }
 
     .site-branding-text{
