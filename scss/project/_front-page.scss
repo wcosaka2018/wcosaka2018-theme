@@ -15,7 +15,7 @@ front-page
     height: 100vh;
     .custom-header,
     .custom-header-media{
-        height:100% !important;
+        height:100%!important;
     }
 }
 
@@ -36,7 +36,7 @@ front-page
 }
 
 .custom-header-media:before{
-    background: none;
+		background: none;
 }
 
 .wp-custom-header{
@@ -49,6 +49,7 @@ front-page
     margin: 0 !important;
     padding: 0 !important;
     top: 0;
+
     .wrap{
         height:100%;
     }
@@ -59,12 +60,14 @@ front-page
     height:100%;
     position: relative;
     z-index:99997;
+
     .site-title{
         width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+
         a{
             background-image: url(../docs/images/pre-logo.png);
             display: block;
@@ -75,7 +78,7 @@ front-page
             height: 70px;
             overflow: hidden;
             text-indent: -300%;
-            outline: none;
+						outline: none;
         }
     }
 }
@@ -94,48 +97,52 @@ front-page
 
 @media screen and (min-width: 48em) {
 
-    .site-header{
-        height: auto;
-        .custom-header,
-        .custom-header-media{
-            height:100% !important;
-        }
-    }
+		.site-header{
+				height: auto;
+  		  .custom-header,
+  		  .custom-header-media{
+  		      height:100%!important;
+  		 }
+		}	
 	
     #masthead, .custom-header, .custom-header-media {
         background: #ffffff!important;
     }
 
+		.wp-custom-header{
+				max-width: 1200px;
+   			position: relative;
+    		width: 100%;
+				height: 100%;
+				margin: 0 auto;
+		}
+	
+		.wp-custom-header:before{
+				content:"";
+    		display: block;
+    		padding-top: 56.25%;
+		}
+
+    #wp-custom-header-video {
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		width: 100%;
+   			height: 101%;
+				display: block;
+				min-width: 10px;
+				border: none;
+    }	
+	
     .wp-custom-header{
-        max-width: 1200px;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
+
         .wp-custom-header-video-button{
             position: absolute;
-            top: 30px;
+            top: 100px;
             border-radius: 50%;
             z-index:10000;
             opacity: 1;
         }
-    }
-
-    .wp-custom-header:before{
-        content:"";
-        display: block;
-        padding-top: 56.25%;
-    }
-
-    #wp-custom-header-video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 101%;
-        display: block;
-        min-width: 10px;
-        border: none;
     }
 
     .html5-video-player:not(.ytp-transparent),
@@ -147,7 +154,7 @@ front-page
 
     .site-branding-text{
         .site-title{
-            transform: translateY(35px);
+					transform: translateY(35px);
             a{
                 width: 50vw;
                 height: 200px;
@@ -326,6 +333,7 @@ front-page
 
             .top-image{
                 margin-bottom: 100px;
+
                 img{
                     border-radius: 10px;
                 }
