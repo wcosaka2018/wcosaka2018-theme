@@ -121,25 +121,30 @@
 }
 
 .menu > li.btn-join{
-		display: block;
-    position: absolute;
-    top: 420px;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-		z-index: -1;
+	display: none;
+}
+
+.home{
+    .menu > li.btn-join{
+	    	display: block;
+        position: absolute;
+        top: 420px;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+	      z-index: -1;
 	
-	a{
-			color:#fff;
-			font-size:16px;
-			font-size: 1rem;
-			background: $color-green;;
-			padding:10px 20px;
-	}
-	a:hover{
-			background: $base-color;
-	}
-	
+	    a{
+		    	color:#fff;
+		    	font-size:16px;
+		    	font-size: 1rem;
+		    	background: $color-green;;
+		    	padding:10px 20px;
+	    }
+	    a:hover{
+		    	background: $base-color;
+	    }
+    }
 }
 
 .social-navigation{
@@ -148,7 +153,7 @@
 
 
 @media screen and (min-width: 24em){
-.menu > li.btn-join{
+.home .menu > li.btn-join{
     top: 450px;
 	
 	a{
@@ -236,7 +241,7 @@
                 left:0;
             }
         }
-				.menu > li{
+				.menu > li:not(.btn-join){
 					display: inline-block!important;
 				}
     }
@@ -286,7 +291,7 @@
         }
     }
 
-.menu > li.btn-join{
+.home .menu > li.btn-join{
     top: 340px;
 		a{
 				line-height: 40px;
@@ -332,7 +337,7 @@
 
 @media screen and (min-width: 52em){
 	
-		.menu > li.btn-join{
+		.home .menu > li.btn-join{
 				top: 360px;
 		}
 	
@@ -340,7 +345,7 @@
 
 @media screen and (min-width: 54em){
 	
-		.menu > li.btn-join{
+		.home .menu > li.btn-join{
 				top: 380px;
 		}	
 	
@@ -348,7 +353,7 @@
 
 @media screen and (min-width: 56em){
 	
-		.menu > li.btn-join{
+		.home .menu > li.btn-join{
 				top: 400px;
 		}	
 	
@@ -356,7 +361,7 @@
 
 @media screen and (min-width: 58em){
 	
-		.menu > li.btn-join{
+		.home .menu > li.btn-join{
 				top: 420px;
 		}	
 	
@@ -379,7 +384,7 @@
         }
 }
 	
-		.menu > li.btn-join{
+		.home .menu > li.btn-join{
 				top: 450px;
 		}
 	
@@ -387,7 +392,7 @@
 
 @media screen and (min-width: 64em){
 	
-		.menu > li.btn-join{
+		.home .menu > li.btn-join{
 				top: 490px;
 		}	
 	
