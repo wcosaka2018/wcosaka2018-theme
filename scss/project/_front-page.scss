@@ -270,7 +270,7 @@ front-page
 /*social*/
 
 #panel2{
-    background: #eee;
+    background: lighten( $base-color, 15% );
     padding-bottom: 4.5em;
 }
 
@@ -337,7 +337,7 @@ front-page
     /*detail*/
     .entry-content{
         .detail{
-            background: #eee;
+            background: lighten( $base-color, 15% );
             padding-left: calc(50vw - 50%);
             padding-right: calc(50vw - 50%);
             margin-left: calc(50% - 50vw);
