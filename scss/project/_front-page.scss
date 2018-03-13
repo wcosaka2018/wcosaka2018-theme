@@ -252,36 +252,35 @@ front-page
         margin-right: -100px;
         margin-top:-30px;
 				
-			a{
-				margin-left: 0;
-			}
+        a{
+            margin-left: 0;
+        }
 			
-				a:hover{
-					  box-shadow: none!important;
+        a:hover{
+            box-shadow: none!important;
             -webkit-box-shadow:none!important;
-				}
-				.entry-meta a{
-					color:#aaa;
-				}
+        }
+        .entry-meta a{
+            color:#aaa;
+        }
 
         h3 {
-					  color: #333;
-					  background: -webkit-linear-gradient(0deg, $color-green, $color-lilac);
- 						-webkit-background-clip: text;
-					  -webkit-text-fill-color: transparent;
+            color: #333;
+            background: -webkit-linear-gradient(85deg, $color-lilac, $color-green);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            a{
+                font-weight: 700!important;
+                font-size:1.5rem;
+                box-shadow: none!important;
+                -webkit-box-shadow:none!important;
+                &:hover{
+                    box-shadow: none!important;
+                    -webkit-box-shadow:none!important;
+                }
+            }
         }
-				
-				h3 a{
-				    font-weight: 700!important;
-						font-size:1.5rem;
-            box-shadow: none!important;
-            -webkit-box-shadow:none!important;
-				}
-				
-        h3 a:hover{
-            box-shadow: none!important;
-            -webkit-box-shadow:none!important;
-        }
+
     }
     article:nth-child(odd){
         background-position: 100% 2px;
