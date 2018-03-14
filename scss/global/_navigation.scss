@@ -138,11 +138,12 @@
 		    	color:#fff;
 		    	font-size:16px;
 		    	font-size: 1rem;
-		    	background: $color-green;;
+		    	background: $color-green;
 		    	padding:10px 20px;
+					transition: background .8s;
 	    }
 	    a:hover{
-		    	background: $base-color;
+		    	background: $color-lilac;
 	    }
     }
 }
