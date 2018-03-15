@@ -26,7 +26,7 @@
 }
 
 .page-header,
-.page .entry-header {
+body:not(.home):not(.blog):not(.single) .entry-header {
     background: url(../docs/images/wapu_bg.jpg) center center no-repeat;
     background-size: contain;
     min-height: 120px;
