@@ -1,0 +1,406 @@
+/*==========================
+
+front-page
+
+===========================*/
+
+/*main-visual*/
+
+#wp-custom-header-video {
+		display: none;
+    background: transparent;
+}
+
+.site-header{
+    height: 100vh;
+    .custom-header{
+        height:100%!important;
+    }
+}
+
+#masthead {
+    background: url(../docs/images/main-bg-sp.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .wrap {
+        padding: 0 !important;
+        text-align: center;
+        .home {
+            .site-title {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.custom-header-media:before{
+		background: none;
+}
+
+.wp-custom-header{
+    .wp-custom-header-video-button{
+        opacity: 0;
+    }
+}
+
+.site-branding {
+    margin: 0 !important;
+    padding: 0 !important;
+    top: 0;
+		height: 100%;
+
+    .wrap{
+        height:100%;
+    }
+}
+
+.site-branding-text{
+    width:100%;
+    height:100%;
+    position: relative;
+    z-index:99997;
+
+    .site-title{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a{
+            background-image: url(../docs/images/pre-logo.png);
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 80vw;
+            height: 70px;
+            overflow: hidden;
+            text-indent: -300%;
+						outline: none;
+        }
+    }
+}
+
+@media screen and (min-width: 24em) {
+    .site-branding-text{
+        .site-title{
+            a{
+                width: 65vw;
+                height: 150px;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 48em) {
+
+		.site-header{
+				height: auto;
+  		  .custom-header,
+  		  .custom-header-media{
+  		      height:100%!important;
+  		 }
+		}	
+	
+    #masthead, .custom-header, .custom-header-media {
+        background: #ffffff!important;
+    }
+
+		.wp-custom-header{
+				max-width: 1200px;
+   			position: relative;
+    		width: 100%;
+				height: 100%;
+				margin: 0 auto;
+		}
+	
+		.wp-custom-header:before{
+				content:"";
+    		display: block;
+    		padding-top: 56.25%;
+		}
+
+    #wp-custom-header-video {
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		width: 100%;
+   			height: 101%;
+				display: block!important;
+				min-width: 10px;
+				border: none;
+    }	
+	
+    .wp-custom-header{
+
+        .wp-custom-header-video-button{
+            position: absolute;
+            top: 100px;
+            border-radius: 50%;
+            z-index:10000;
+            opacity: 1;
+        }
+    }
+
+    .site-branding-text{
+        .site-title{
+					transform: translateY(35px);
+            a{
+                width: 50vw;
+                height: 200px;
+            }
+        }
+    }
+
+}
+
+
+/*message*/
+
+.page {
+    .panel-content {
+        h2{
+            font-size:24px!important;
+            font-size:1.5rem!important;
+            color:#333!important;
+            text-transform: none!important;
+        }
+        .top-image{
+            margin-bottom: 30px;
+        }
+        .wrap{
+            padding-bottom: 0;
+        }
+    }
+}
+
+
+.flex-wrap{
+    display:-webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap:wrap;
+    flex-wrap:wrap;
+
+    .top-message{
+        -webkit-box-ordinal-group:1;
+        -ms-flex-order:1;
+        -webkit-order:1;
+        order:1;
+    }
+    .top-image{
+        -webkit-box-ordinal-group:0;
+        -ms-flex-order:0;
+        -webkit-order:0;
+        order:0;
+    }
+}
+
+/*detail*/
+.entry-content{
+    .detail{
+        padding-top:1.75em;
+        padding-bottom:0.5em;
+
+        h2{
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+.googlemaps{
+    iframe{
+        padding-left: calc(50vw - 50%);
+        padding-right: calc(50vw - 50%);
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+    }
+}
+
+/*blog*/
+.twentyseventeen-front-page {
+    article:not(.has-post-thumbnail):not(:first-child){
+        border-top: none;
+    }
+}
+
+#panel1{
+    .entry-header{
+        display: none;
+    }
+}
+
+#panel1{
+    .recent-posts{
+        .entry-header{
+            display: block;
+        }
+    }
+}
+
+.recent-posts{
+    article{
+        background: url(../docs/images/wapu_bg.jpg) no-repeat;
+        background-size: 200px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top:30px;
+        margin-left: -100px;
+        margin-right: -100px;
+        margin-top:-30px;
+				
+        a{
+            margin-left: 0;
+        }
+			
+        a:hover{
+            box-shadow: none!important;
+            -webkit-box-shadow:none!important;
+        }
+        .entry-meta a{
+            color:#aaa;
+        }
+
+        h3 {
+            color: #333;
+            background: -webkit-linear-gradient(85deg, $color-lilac, $color-green);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            a{
+                font-weight: 700!important;
+                font-size:1.5rem;
+                box-shadow: none!important;
+                -webkit-box-shadow:none!important;
+                &:hover{
+                    box-shadow: none!important;
+                    -webkit-box-shadow:none!important;
+                }
+            }
+        }
+
+    }
+    article:nth-child(odd){
+        background-position: 100% 2px;
+    }
+    article:nth-child(even){
+        background-position: 0 2px;
+    }
+}
+
+/*social*/
+
+#panel2{
+    background:linear-gradient(45deg, rgba(52, 175, 165, 0.15), rgba(179, 214, 211, 0.15), rgba(180, 132, 184, 0.15)), url(../docs/images/bg-geometric.png);
+    padding-bottom: 4.5em;
+}
+
+@media screen and (min-width: 30em) {
+    /*detail*/
+    .entry-content{
+        .detail{
+            padding-top:2em;
+            padding-bottom:3.5em;
+        }
+        h2{
+            margin-bottom: 1.5em;
+        }
+    }
+}
+
+@media screen and (min-width: 48em) {
+    /*message*/
+    .page-one-column{
+        .panel-content{
+            overflow: visible;
+            .wrap{
+                max-width: 1000px;
+            }
+        }
+    }
+
+    .page {
+        .panel-content {
+            h2{
+                font-size:28px!important;
+                font-size:1.75rem!important;
+                text-transform: none!important;
+                display: flex;
+                align-items: center;
+                text-align: center; /* for no-flexbox browsers */
+            }
+            h2:after {
+                border-top: 1px solid #ccc;
+                content: "";
+                display: inline; /* for IE */
+                flex-grow: 1;
+                margin-left: 0.5em;
+            }
+        }
+    }
+    .panel-content{
+        .flex-wrap{
+            display:block;
+            .top-message{
+                margin-bottom: 30px;
+            }
+
+            .top-image{
+                margin-bottom: 100px;
+
+                img{
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    /*detail*/
+    .entry-content{
+        .detail{
+            background:linear-gradient(45deg, rgba(52, 175, 165, 0.15), rgba(179, 214, 211, 0.15), rgba(180, 132, 184, 0.15)), url(../docs/images/bg-geometric.png);
+            padding-left: calc(50vw - 50%);
+            padding-right: calc(50vw - 50%);
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+            padding-top:6em;
+            padding-bottom:4.5em;
+
+            .left{
+                width: 48%;
+                float: left;
+                margin-right: 2%;
+            }
+            .right{
+                width: 50%;
+                float: left;
+            }
+        }
+    }
+
+    .googlemaps{
+        iframe{
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .twentyseventeen-front-page.page-one-column{
+        .entry-header	{
+            margin-bottom: 1.5rem;
+        }
+    }
+	
+		.recent-posts{
+				article{
+
+						h3 a{
+								font-size:1.875rem;
+						}
+		}	
+	}
+}
