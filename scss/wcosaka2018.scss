@@ -1,12 +1,9 @@
 // compileCompressed: ../css/$1.css
 @charset "utf-8";
-div {
-  background-color: red;
-  margin: 0 auto;
-  p {
-    padding: 1em 0;
-    span {
-      font-size: 2em;
-    }
-  }
-}
+
+@import "global/rule";
+@import "global/base";
+@import "global/header";
+@import "global/navigation";
+@import "global/footer";
+@import "project/front-page";
