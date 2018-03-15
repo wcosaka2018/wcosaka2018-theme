@@ -553,7 +553,7 @@
 }
 
 .page-header,
-.page .entry-header {
+body:not(.home):not(.blog):not(.single) .entry-header {
   background: url(../docs/images/wapu_bg.jpg) center center no-repeat;
   background-size: contain;
   min-height: 120px;
@@ -568,15 +568,15 @@
 
 @media screen and (min-width: 48em) {
   .page-header,
-  .page .entry-header {
+  body:not(.home):not(.blog):not(.single) .entry-header {
     margin: 2em 0 4em;
   }
 }
 
 .page-header .page-title,
 .page-header .entry-title,
-.page .entry-header .page-title,
-.page .entry-header .entry-title {
+body:not(.home):not(.blog):not(.single) .entry-header .page-title,
+body:not(.home):not(.blog):not(.single) .entry-header .entry-title {
   background: -webkit-linear-gradient(85deg, #B484B8, #34AFA5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -587,10 +587,10 @@
 .page-header .page-title:before, .page-header .page-title:after,
 .page-header .entry-title:before,
 .page-header .entry-title:after,
-.page .entry-header .page-title:before,
-.page .entry-header .page-title:after,
-.page .entry-header .entry-title:before,
-.page .entry-header .entry-title:after {
+body:not(.home):not(.blog):not(.single) .entry-header .page-title:before,
+body:not(.home):not(.blog):not(.single) .entry-header .page-title:after,
+body:not(.home):not(.blog):not(.single) .entry-header .entry-title:before,
+body:not(.home):not(.blog):not(.single) .entry-header .entry-title:after {
   content: "";
   display: inline-block;
   width: 3em;
@@ -603,20 +603,20 @@
 
 .page-header .page-title:before,
 .page-header .entry-title:before,
-.page .entry-header .page-title:before,
-.page .entry-header .entry-title:before {
+body:not(.home):not(.blog):not(.single) .entry-header .page-title:before,
+body:not(.home):not(.blog):not(.single) .entry-header .entry-title:before {
   left: -3.5em;
 }
 
 .page-header .page-title:after,
 .page-header .entry-title:after,
-.page .entry-header .page-title:after,
-.page .entry-header .entry-title:after {
+body:not(.home):not(.blog):not(.single) .entry-header .page-title:after,
+body:not(.home):not(.blog):not(.single) .entry-header .entry-title:after {
   right: -3.5em;
 }
 
 .page-header .edit-link,
-.page .entry-header .edit-link {
+body:not(.home):not(.blog):not(.single) .entry-header .edit-link {
   position: absolute;
   bottom: 0;
 }
@@ -827,7 +827,6 @@ front-page
 }
 
 .recent-posts article {
-  background: url(../docs/images/wapu_bg.jpg) no-repeat;
   background-size: 200px;
   padding-left: 100px;
   padding-right: 100px;
