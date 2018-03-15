@@ -29,11 +29,11 @@
 }
 
 .navigation-top .menu-toggle .icon-bars {
-  color: #fff;
+  color: #B3D6D3;
 }
 
 .navigation-top .menu-toggle .icon-close {
-  color: #333;
+  color: #131E24;
 }
 
 .navigation-top .wrap {
@@ -517,6 +517,121 @@
   }
 }
 
+.entry-content ul {
+  padding-left: 1.5em;
+  margin: 0;
+}
+
+.site-header {
+  background-color: transparent;
+  height: 60px;
+}
+
+.site-header .custom-header,
+.site-header .site-branding {
+  display: none;
+}
+
+.entry-title {
+  color: #333;
+  background: -webkit-linear-gradient(85deg, #B484B8, #34AFA5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.entry-title a {
+  margin-left: 0;
+  font-weight: 700 !important;
+  font-size: 1.5rem;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.entry-title a:hover {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.page-header,
+.page .entry-header {
+  background: url(../docs/images/wapu_bg.jpg) center center no-repeat;
+  background-size: contain;
+  min-height: 120px;
+  padding: 0 !important;
+  margin: 0 0 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+@media screen and (min-width: 48em) {
+  .page-header,
+  .page .entry-header {
+    margin: 2em 0 4em;
+  }
+}
+
+.page-header .page-title,
+.page-header .entry-title,
+.page .entry-header .page-title,
+.page .entry-header .entry-title {
+  background: -webkit-linear-gradient(85deg, #B484B8, #34AFA5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  font-size: 1rem !important;
+}
+
+.page-header .page-title:before, .page-header .page-title:after,
+.page-header .entry-title:before,
+.page-header .entry-title:after,
+.page .entry-header .page-title:before,
+.page .entry-header .page-title:after,
+.page .entry-header .entry-title:before,
+.page .entry-header .entry-title:after {
+  content: "";
+  display: inline-block;
+  width: 3em;
+  height: 2px;
+  margin-top: -1px;
+  position: absolute;
+  top: 50%;
+  background: linear-gradient(85deg, #34AFA5, #B484B8);
+}
+
+.page-header .page-title:before,
+.page-header .entry-title:before,
+.page .entry-header .page-title:before,
+.page .entry-header .entry-title:before {
+  left: -3.5em;
+}
+
+.page-header .page-title:after,
+.page-header .entry-title:after,
+.page .entry-header .page-title:after,
+.page .entry-header .entry-title:after {
+  right: -3.5em;
+}
+
+.page-header .edit-link,
+.page .entry-header .edit-link {
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (min-width: 48em) {
+  body:not(.has-sidebar):not(.page-one-column) .page-header, body.has-sidebar.error404 #primary .page-header, body.page-two-column:not(.archive) #primary .entry-header, body.page-two-column.archive:not(.has-sidebar) #primary .page-header {
+    float: none;
+    width: 100%;
+  }
+  .blog:not(.has-sidebar) #primary article, .archive:not(.page-one-column):not(.has-sidebar) #primary article, .search:not(.has-sidebar) #primary article, .error404:not(.has-sidebar) #primary .page-content, .error404.has-sidebar #primary .page-content, body.page-two-column:not(.archive) #primary .entry-content, body.page-two-column #comments {
+    float: none;
+    width: 100%;
+  }
+}
+
 /*==========================
 
 front-page
@@ -528,47 +643,12 @@ front-page
   background: transparent;
 }
 
-.site-header {
-  height: 100vh;
-}
-
-.site-header .custom-header {
-  height: 100% !important;
-}
-
-#masthead {
-  background: url(../docs/images/main-bg-sp.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#masthead .wrap {
-  padding: 0 !important;
-  text-align: center;
-}
-
-#masthead .wrap .home .site-title {
-  justify-content: center;
-}
-
 .custom-header-media:before {
   background: none;
 }
 
 .wp-custom-header .wp-custom-header-video-button {
   opacity: 0;
-}
-
-.site-branding {
-  margin: 0 !important;
-  padding: 0 !important;
-  top: 0;
-  height: 100%;
-}
-
-.site-branding .wrap {
-  height: 100%;
 }
 
 .site-branding-text {
@@ -597,6 +677,29 @@ front-page
   overflow: hidden;
   text-indent: -300%;
   outline: none;
+}
+
+.home .site-header {
+  height: 100vh;
+}
+
+.home .site-header .custom-header {
+  height: 100% !important;
+}
+
+.home .site-branding {
+  margin: 0 !important;
+  padding: 0 !important;
+  top: 0;
+  height: 100%;
+}
+
+.home .site-branding .wrap {
+  height: 100%;
+}
+
+.home .navigation-top .menu-toggle .icon-bars {
+  color: #ffffff;
 }
 
 @media screen and (min-width: 24em) {
