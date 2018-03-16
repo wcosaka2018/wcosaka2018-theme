@@ -1,3 +1,7 @@
+.site-description {
+  display: none;
+}
+
 /*===header-menu===*/
 .navigation-top {
   position: absolute;
@@ -326,7 +330,7 @@
 }
 
 @media screen and (min-width: 52em) {
-  .home .menu > li.btn-join {
+  .menu > li.btn-join {
     top: 360px;
   }
 }
@@ -522,13 +526,13 @@
   margin: 0;
 }
 
-.site-header {
+body:not(.home) .site-header {
   background-color: transparent;
   height: 60px;
 }
 
-.site-header .custom-header,
-.site-header .site-branding {
+body:not(.home) .site-header .custom-header,
+body:not(.home) .site-header .site-branding {
   display: none;
 }
 
@@ -632,12 +636,12 @@ body:not(.home):not(.blog):not(.single) .entry-header .edit-link {
   }
 }
 
-.home {
-  /*==========================
+/*==========================
 
 front-page
 
 ===========================*/
+.home {
   /*main-visual*/
   /*message*/
   /*detail*/
@@ -687,6 +691,7 @@ front-page
   padding: 0 !important;
   top: 0;
   height: 100%;
+  display: block;
 }
 
 .home .site-branding .wrap {
