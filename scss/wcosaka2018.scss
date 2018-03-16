@@ -8,4 +8,6 @@
 @import "global/footer";
 @import "project/post-format";
 @import "project/page";
-@import "project/front-page";
+.home {
+  @import "project/front-page";
+}
