@@ -11,6 +11,29 @@ front-page
     background: transparent;
 }
 
+.site-header {
+    height: 100vh;
+    .custom-header {
+        height: 100% !important;
+    }
+}
+
+#masthead {
+    background: url(../docs/images/main-bg-sp.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .wrap {
+        padding: 0 !important;
+        text-align: center;
+        .home {
+            .site-title {
+                justify-content: center;
+            }
+        }
+    }
+}
+
 .custom-header-media:before {
     background: none;
 }
@@ -18,6 +41,17 @@ front-page
 .wp-custom-header {
     .wp-custom-header-video-button {
         opacity: 0;
+    }
+}
+
+.site-branding {
+    margin: 0 !important;
+    padding: 0 !important;
+    top: 0;
+    height: 100%;
+
+    .wrap {
+        height: 100%;
     }
 }
 
@@ -45,32 +79,6 @@ front-page
             overflow: hidden;
             text-indent: -300%;
             outline: none;
-        }
-    }
-}
-
-.home {
-    .site-header {
-        height: 100vh;
-        .custom-header {
-            height: 100% !important;
-        }
-    }
-    .site-branding {
-        margin: 0 !important;
-        padding: 0 !important;
-        top: 0;
-        height: 100%;
-
-        .wrap {
-            height: 100%;
-        }
-    }
-    .navigation-top {
-        .menu-toggle {
-            .icon-bars {
-                color: $color-white;
-            }
         }
     }
 }
@@ -233,15 +241,6 @@ front-page
 
 .recent-posts {
     article {
-        //background: url(../docs/images/wapu_bg.jpg) no-repeat;
-        background-size: 200px;
-        padding-left: 100px;
-        padding-right: 100px;
-        padding-top: 30px;
-        margin-left: -100px;
-        margin-right: -100px;
-        margin-top: -30px;
-
         a {
             margin-left: 0;
         }
@@ -253,24 +252,6 @@ front-page
         .entry-meta a {
             color: #aaa;
         }
-
-        h3 {
-            color: #333;
-            background: -webkit-linear-gradient(85deg, $color-lilac, $color-green);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            a {
-                font-weight: 700 !important;
-                font-size: 1.5rem;
-                box-shadow: none !important;
-                -webkit-box-shadow: none !important;
-                &:hover {
-                    box-shadow: none !important;
-                    -webkit-box-shadow: none !important;
-                }
-            }
-        }
-
     }
     article:nth-child(odd) {
         background-position: 100% 2px;
