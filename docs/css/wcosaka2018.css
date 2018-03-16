@@ -154,13 +154,20 @@
   background: #B484B8;
 }
 
-.social-navigation {
+.menu li.twitter,
+.menu li.facebook {
   display: none;
+}
+
+@media screen and (min-width: 22em) {
+  .home .menu > li.btn-join {
+    top: 540px;
+  }
 }
 
 @media screen and (min-width: 24em) {
   .home .menu > li.btn-join {
-    top: 450px;
+    top: 480px;
   }
   .home .menu > li.btn-join a {
     font-size: 20px;
@@ -245,7 +252,11 @@
     transition: all .3s;
   }
   .main-navigation .menu > li:not(.btn-join) {
-    display: inline-block !important;
+    display: inline-block;
+  }
+  .menu {
+    display: flex !important;
+    justify-content: flex-start;
   }
   .menu ul a {
     color: #fff !important;
@@ -272,7 +283,6 @@
   }
   .menu > li.join {
     border: none;
-    display: inline-block;
     margin-top: 0px;
   }
   .menu > li.join a {
@@ -294,6 +304,35 @@
   .home .menu > li.btn-join a {
     line-height: 40px;
     padding: 10px 30px;
+  }
+  .menu li.facebook,
+  .menu li.twitter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .menu li.facebook a,
+  .menu li.twitter a {
+    padding: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #ccc;
+  }
+  .menu li.facebook a:hover,
+  .menu li.twitter a:hover {
+    color: #B3D6D3;
+  }
+  .menu li.twitter:hover,
+  .menu li.facebook:hover {
+    background: #fff;
+  }
+  .menu li.twitter {
+    right: 55px;
+  }
+  .menu li.facebook {
+    right: 15px;
   }
   .menu-scroll-down {
     display: none !important;
@@ -706,6 +745,7 @@ front-page
 }
 
 .home .site-branding-text .site-title {
+  transform: translateY(-60px);
   width: 100%;
   height: 100%;
   display: flex;
@@ -714,20 +754,30 @@ front-page
 }
 
 .home .site-branding-text .site-title a {
-  background-image: url(../docs/images/pre-logo.png);
+  background-image: url(../docs/images/logo-sp.png);
   display: block;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 80vw;
-  height: 70px;
+  width: 70vw;
+  height: 400px;
   overflow: hidden;
   text-indent: -300%;
   outline: none;
 }
 
-@media screen and (min-width: 24em) {
+@media screen and (min-width: 22em) {
+  .home .site-branding-text .site-title {
+    transform: translateY(-75px);
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .home .site-branding-text .site-title {
+    transform: translateY(0px);
+  }
   .home .site-branding-text .site-title a {
+    background-image: url(../docs/images/pre-logo.png);
     width: 65vw;
     height: 150px;
   }
@@ -756,6 +806,17 @@ front-page
     display: block;
     padding-top: 56.25%;
   }
+  .home .wp-custom-header:after {
+    content: "";
+    max-width: 1200px;
+    position: absolute;
+    top: 0;
+    width: inherit;
+    height: inherit;
+    margin: 0 auto;
+    background: linear-gradient(45deg, rgba(52, 175, 165, 0.3), rgba(179, 214, 211, 0.3), rgba(180, 132, 184, 0.3)), url(../docs/images/bg-geometric-movie.png);
+    z-index: 2;
+  }
   .home #wp-custom-header-video {
     position: absolute;
     top: 0;
@@ -765,6 +826,7 @@ front-page
     display: block !important;
     min-width: 10px;
     border: none;
+    z-index: 2;
   }
   .home .wp-custom-header .wp-custom-header-video-button {
     position: absolute;
@@ -795,6 +857,11 @@ front-page
 
 .home .page .panel-content .wrap {
   padding-bottom: 0;
+  max-width: 1000px;
+}
+
+.home article:not(.has-post-thumbnail):not(:first-child) {
+  border: none;
 }
 
 .home .flex-wrap {
@@ -833,10 +900,6 @@ front-page
   padding-right: calc(50vw - 50%);
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-}
-
-.home .twentyseventeen-front-page article:not(.has-post-thumbnail):not(:first-child) {
-  border-top: none;
 }
 
 .home #panel1 .entry-header {
