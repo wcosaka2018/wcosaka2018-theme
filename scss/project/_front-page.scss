@@ -124,6 +124,18 @@ front-page
             display: block;
             padding-top: 56.25%;
         }
+        
+        .wp-custom-header:after{
+            content: "";
+            max-width: 1200px;
+            position: absolute;
+            top: 0;
+            width: inherit;
+            height: inherit;
+            margin: 0 auto;
+            background:  linear-gradient(45deg, rgba(52, 175, 165, 0.3), rgba(179, 214, 211, 0.3), rgba(180, 132, 184, 0.3)), url(../docs/images/bg-geometric-movie.png);
+            z-index: 2;
+        }
 
         #wp-custom-header-video {
             position: absolute;
@@ -134,6 +146,7 @@ front-page
             display: block !important;
             min-width: 10px;
             border: none;
+            z-index:2;
         }
 
         .wp-custom-header {
@@ -174,6 +187,10 @@ front-page
             }
             .wrap {
                 padding-bottom: 0;
+                max-width: 1000px;
+            }
+            #panel1{
+                border: none!important;
             }
         }
     }
@@ -221,12 +238,6 @@ front-page
     }
 
     /*blog*/
-    .twentyseventeen-front-page {
-        article:not(.has-post-thumbnail):not(:first-child) {
-            border-top: none;
-        }
-    }
-
     #panel1 {
         .entry-header {
             display: none;
