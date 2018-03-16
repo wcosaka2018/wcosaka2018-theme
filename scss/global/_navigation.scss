@@ -155,9 +155,15 @@
     display: none;
 }
 
+@media screen and (min-width: 22em) {
+    .home .menu > li.btn-join {
+        top: 540px;
+    }
+}
+
 @media screen and (min-width: 24em) {
     .home .menu > li.btn-join {
-        top: 450px;
+        top: 480px;
 
         a {
             font-size: 20px;
@@ -353,11 +359,11 @@
         }
         
         li.twitter{
-            right: 60px;
+            right: 55px;
         }
         
         li.facebook{
-            right: 20px;
+            right: 15px;
         }
         
     }

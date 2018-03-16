@@ -4,9 +4,11 @@ front-page
 
 ===========================*/
 
+
 .home {
 
     /*main-visual*/
+    
 
     #wp-custom-header-video {
         display: none;
@@ -64,6 +66,7 @@ front-page
         z-index: 99997;
 
         .site-title {
+            transform: translateY(-60px);
             width: 100%;
             height: 100%;
             display: flex;
@@ -71,24 +74,32 @@ front-page
             justify-content: center;
 
             a {
-                background-image: url(../docs/images/pre-logo.png);
+                background-image: url(../docs/images/logo-sp.png);
                 display: block;
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center center;
-                width: 80vw;
-                height: 70px;
+                width: 70vw;
+                height:400px;
                 overflow: hidden;
                 text-indent: -300%;
                 outline: none;
             }
         }
     }
-
-    @media screen and (min-width: 24em) {
+    @media screen and (min-width: 22em) {
         .site-branding-text {
             .site-title {
+                transform: translateY(-75px);
+            }
+        }
+    }
+    @media screen and (min-width: 30em) {
+        .site-branding-text {
+            .site-title {
+                transform: translateY(0px);
                 a {
+                    background-image: url(../docs/images/pre-logo.png);
                     width: 65vw;
                     height: 150px;
                 }
@@ -189,10 +200,11 @@ front-page
                 padding-bottom: 0;
                 max-width: 1000px;
             }
-            #panel1{
-                border: none!important;
-            }
         }
+    }
+
+    article:not(.has-post-thumbnail):not(:first-child) {
+        border: none;
     }
 
     .flex-wrap {
