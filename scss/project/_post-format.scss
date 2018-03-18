@@ -1,6 +1,301 @@
-.entry-content {
-    ul {
-        padding-left: 1.5em;
-        margin: 0;
+.blog, .page:not(.home){
+    .entry-content {
+    
+        h1, h2, h3, h4, h5, h6{
+            color: #333;
+            padding: 5px 0;
+            margin-bottom: 20px;
+        }
+    
+        h1{
+            font-size: 30px;
+            font-size: 1.875rem;
+            color:#333;
+            margin-bottom: 30px;
+        }
+
+        h2{
+            font-size: 22px;
+            font-size: 1.375rem;
+            border-bottom: 2px solid #eee;
+            padding: 5px 0;
+            margin-bottom: 30px;
+        }
+
+        h3{
+            font-size: 18px;
+            font-size: 1.125rem;
+            padding: 15px;
+            background: #eee;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        h4{
+            font-size: 16px;
+            font-size: 1rem;
+        }
+
+        h5{
+            font-size: 15px;
+            font-size: 0.9375rem;
+        }
+
+        h6{
+            font-size: 15px;
+            font-size: 0.9375rem;
+        }
+
+        blockquote{
+            position: relative;
+            padding: 10px 15px 10px 50px;
+            box-sizing: border-box;
+            font-style: italic;
+            border: solid 2px #666;
+            color: #666;
+            font-size: 15px;
+            font-size: 0.9375rem;
+            margin-bottom: 30px;
+
+            p{
+                padding: 0;
+                margin: 10px 0;
+                line-height: 1.7;
+            }
+
+            cite{
+                display: block;
+                text-align: right;
+                color: #888888;
+                font-size: 0.9em;
+                font-weight: 400;
+            }
+        }
+
+        blockquote:before{
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            vertical-align: middle;
+            content: "\f10d";
+            font-family: FontAwesome;
+            color: $base-color;
+            font-size: 25px;
+            line-height: 1;
+        }
+        table{
+
+            font-size: 15px;
+            font-size: 0.9375rem;
+
+            thead{
+                border-bottom: 2px solid #ddd;
+
+                th{
+                    border-bottom: none;
+                    padding: 0.5rem;
+                    font-weight: 700!important;
+                }
+            }
+
+            th:first-child{
+                padding: 0.5rem 0.5rem 0.5rem 0;
+                font-weight: 400;
+            }
+
+            td{
+                padding: 0.5rem;
+            }
+        }
+
+        dt{
+            font-size: 15px;
+            font-size: 0.9375rem;
+            line-height: 1.7;
+            margin-bottom: 5px;
+        }
+
+        dd{
+            font-size: 15px;
+            font-size: 0.9375rem;
+            margin-left: 0;
+            line-height: 1.7;
+        }
+
+        ul{
+            font-size: 15px;
+            font-size: 0.9375rem;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            padding-left: 1.5rem;
+
+            ul, ol{
+                margin-bottom: 0px;
+                padding-left: 0;
+            }
+
+        }
+
+        ol{
+            font-size: 15px;
+            font-size: 0.9375rem;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            padding-left: 1.5rem;
+
+            ul, ol{
+                margin-bottom: 0;
+                padding-left: 0;
+            }
+
+        }
+
+        a{
+            color:$color-green;
+            box-shadow: none;
+            transition: all .3s;
+        }
+
+        a:hover{
+            color:$base-color;
+            box-shadow: none;
+        }
+
+        a:active{
+            color:$base-color;
+            box-shadow: none;
+        }
+
+        p{
+            font-size: 15px;
+            font-size: 0.9375rem;
+            line-height: 1.7;
+        }
+
+        .page-links{
+            .page-number{
+                background: $base-color;
+                border-radius: 5px;
+                color:#fff;
+            }
+
+            a{
+
+                .page-number{
+                    background: #eee;
+                    box-shadow: none;
+                    color:#333;
+                    transition: all .3s;
+                }
+
+            }
+
+            a:hover{
+                box-shadow: none;
+
+                .page-number{
+                    background: $base-color;
+                    color:#fff;
+                }
+
+            }
+
+            a:active{
+                box-shadow: none;
+            }
+        }
+
+        @media screen and (min-width: 48em) {
+
+            h1{
+                font-size: 32px;
+                font-size: 2rem;
+            }
+
+            h2{
+                font-size: 24px;
+                font-size: 1.5rem;
+            }
+
+            h3{
+                font-size: 20px;
+                font-size: 1.25rem;
+            }
+
+            h4{
+                font-size: 18px;
+                font-size: 1.125rem;
+            }
+
+            h5{
+                font-size: 16px;
+                font-size: 1.0rem;
+            }
+
+            h6{
+                font-size: 16px;
+                font-size: 1.0rem;
+            }
+
+            blockquote{
+                font-size: 16px;
+                font-size: 1rem;
+            }
+
+            table{
+                font-size: 16px;
+                font-size: 1rem;
+
+                dt{
+                    font-size: 16px;
+                    font-size: 1rem;
+                }
+
+                dd{
+                    font-size: 16px;
+                    font-size: 1rem;
+                }
+            }
+
+            ul{
+                font-size: 16px;
+                font-size: 1rem;
+            }
+
+            ol{
+                font-size: 16px;
+                font-size: 1rem;
+            }
+
+            p{
+                font-size: 16px;
+                font-size: 1rem;
+            }
+
+        }
+
     }
+
+    .post-thumbnail{
+        box-sizing: border-box;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+
+        img{
+            width: 100vw;
+        }
+
+    }
+
+        @media screen and (min-width: 48em) {
+            .post-thumbnail{
+                margin-left: 0;
+                margin-right: 0;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
 }
