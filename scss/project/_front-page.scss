@@ -233,7 +233,6 @@ front-page
         .detail {
             padding-top: 1.75em;
             padding-bottom: 0.5em;
-
             h2 {
                 margin-bottom: 1.5em;
             }
@@ -254,9 +253,6 @@ front-page
         .entry-header {
             display: none;
         }
-    }
-
-    #panel1 {
         .recent-posts {
             .entry-header {
                 display: block;
@@ -326,13 +322,20 @@ front-page
                     display: flex;
                     align-items: center;
                     text-align: center; /* for no-flexbox browsers */
+                    &:after {
+                        border-top: 1px solid #ccc;
+                        content: "";
+                        display: inline; /* for IE */
+                        flex-grow: 1;
+                        margin-left: 0.5em;
+                    }
                 }
-                h2:after {
-                    border-top: 1px solid #ccc;
-                    content: "";
-                    display: inline; /* for IE */
-                    flex-grow: 1;
-                    margin-left: 0.5em;
+                .entry-content {
+                    h2 {
+                        &:after {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
