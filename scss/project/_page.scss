@@ -1,10 +1,16 @@
 body:not(.home) .site-header{
     background-color: transparent;
-    height: 60px;
+    height: 65px;
     .custom-header,
     .site-branding {
         display: none;
     }
+}
+
+.single-featured-image-header {
+    background-color: $color-white;
+    border: none;
+    display: none;
 }
 
 .entry-title {
@@ -70,8 +76,6 @@ body:not(.home):not(.blog):not(.single) .entry-header {
         bottom: 0;
     }
 }
-
-
 
 @media screen and (min-width: 48em) {
     body:not(.has-sidebar):not(.page-one-column) .page-header, body.has-sidebar.error404 #primary .page-header, body.page-two-column:not(.archive) #primary .entry-header, body.page-two-column.archive:not(.has-sidebar) #primary .page-header {

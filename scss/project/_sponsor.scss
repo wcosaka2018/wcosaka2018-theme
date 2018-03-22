@@ -1,0 +1,22 @@
+.sponsor-logo {
+    img {
+        border-radius: 5px;
+        //border: 1px solid rgba($color-green, .15);
+    }
+    &:hover {
+        img {
+            //border-color: transparent;
+            background: linear-gradient(45deg, rgba(52, 175, 165, 0.15), rgba(179, 214, 211, 0.15), rgba(180, 132, 184, 0.15));
+        }
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .single-wcb_sponsor {
+        .entry-content {
+            img, img.logo-sponsor {
+                max-width: 600px;
+            }
+        }
+    }
+}
