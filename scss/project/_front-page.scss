@@ -23,7 +23,7 @@ front-page
     }
 
     #masthead {
-        background: url(../docs/images/main-bg-sp.jpg);
+        background: url(https://wcosaka2018.github.io/wcosaka2018-theme/images/main-bg-sp.jpg);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -74,7 +74,7 @@ front-page
             justify-content: center;
 
             a {
-                background-image: url(../docs/images/logo-sp.png);
+                background-image: url(https://wcosaka2018.github.io/wcosaka2018-theme/images/logo-sp.png);
                 display: block;
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -99,7 +99,7 @@ front-page
             .site-title {
                 transform: translateY(0px);
                 a {
-                    background-image: url(../docs/images/pre-logo.png);
+                    background-image: url(https://wcosaka2018.github.io/wcosaka2018-theme/images/pre-logo.png);
                     width: 65vw;
                     height: 150px;
                 }
@@ -144,7 +144,7 @@ front-page
             width: inherit;
             height: inherit;
             margin: 0 auto;
-            background:  linear-gradient(45deg, rgba(52, 175, 165, 0.3), rgba(179, 214, 211, 0.3), rgba(180, 132, 184, 0.3)), url(../docs/images/bg-geometric-movie.png);
+            background:  linear-gradient(45deg, rgba(52, 175, 165, 0.3), rgba(179, 214, 211, 0.3), rgba(180, 132, 184, 0.3)), url(https://wcosaka2018.github.io/wcosaka2018-theme/images/bg-geometric-movie.png);
             z-index: 2;
         }
 
@@ -285,7 +285,7 @@ front-page
     /*social*/
 
     #panel2 {
-        background: linear-gradient(45deg, rgba(52, 175, 165, 0.15), rgba(179, 214, 211, 0.15), rgba(180, 132, 184, 0.15)), url(../docs/images/bg-geometric.png);
+        background: linear-gradient(45deg, rgba(52, 175, 165, 0.15), rgba(179, 214, 211, 0.15), rgba(180, 132, 184, 0.15)), url(https://wcosaka2018.github.io/wcosaka2018-theme/images/bg-geometric.png);
         padding-bottom: 4.5em;
     }
 
@@ -359,7 +359,7 @@ front-page
         /*detail*/
         .entry-content {
             .detail {
-                background: linear-gradient(45deg, rgba(52, 175, 165, 0.15), rgba(179, 214, 211, 0.15), rgba(180, 132, 184, 0.15)), url(../docs/images/bg-geometric.png);
+                background: linear-gradient(45deg, rgba(52, 175, 165, 0.15), rgba(179, 214, 211, 0.15), rgba(180, 132, 184, 0.15)), url(https://wcosaka2018.github.io/wcosaka2018-theme/images/bg-geometric.png);
                 padding-left: calc(50vw - 50%);
                 padding-right: calc(50vw - 50%);
                 margin-left: calc(50% - 50vw);
