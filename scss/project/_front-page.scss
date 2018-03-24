@@ -8,27 +8,10 @@
             position: relative;
             text-align: center;
             &::before {
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateY(0) translateX(-50%);
-                text-transform: uppercase;
-                content: "";
-                white-space: pre;
-                z-index: 1;
-                color: rgba($color-black, .05);
-                font-family: 'Roboto', sans-serif;
-                font-weight: 900;
-                line-height: 1;
-                font-size: 4rem;
+                @include bigIndexBefore();
             }
             .entry-title {
-                position: relative;
-                z-index: 2;
-                @include text-gradation();
-                font-size: 1.75rem;
-                text-transform: none;
-                margin-bottom: 1em;
+                @include bigIndexText();
             }
         }
     }
@@ -155,7 +138,6 @@
     top: 0;
     left: 50%;
     transform: translateY(.5em) translateX(-50%);
-    z-index: 9999;
     text-align: center;
     @media screen and (min-width: 48em) {
         transform: translateY(-2.75em) translateX(-50%);

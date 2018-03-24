@@ -12,7 +12,7 @@ $video-size: 700px;
     display: $display;
     padding: 1em 2em;
     border-radius: 1.75em;
-    background: linear-gradient(to right, $color-green, $color-lilac);
+    background: linear-gradient(to right, rgba($color-green, .9), rgba($color-lilac, .9)) $color-white;
     color: $color-white;
     text-align: center;
     position: relative;
@@ -29,4 +29,29 @@ $video-size: 700px;
     background: -webkit-linear-gradient($dig, $start, $end);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@mixin bigIndexBefore( $content:"" ) {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateY(0) translateX(-50%);
+    text-transform: uppercase;
+    content: $content;
+    white-space: pre;
+    z-index: 1;
+    color: rgba($color-black, .05);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    font-size: 3.75rem;
+}
+
+@mixin bigIndexText() {
+    position: relative;
+    z-index: 2;
+    @include text-gradation();
+    font-size: 1.75rem;
+    text-transform: none;
+    margin-bottom: 1em;
 }

@@ -13,7 +13,7 @@
             display: block;
             height: 8px;
             width: 100%;
-            background: linear-gradient(to right, $color-green, $color-lilac);
+            background: linear-gradient(to right, rgba($color-green, .5), rgba($color-lilac, .5));
         }
         .menu-toggle {
             z-index: 99999;
