@@ -1,0 +1,26 @@
+
+.blog {
+    .site-header {
+        @media screen and (min-width: 48em) {
+            padding-top: 70px;
+        }
+    }
+    .custom-header {
+        display: none;
+    }
+    .site-content {
+        .wrap {
+            @media screen and (min-width: 48em) {
+                max-width: 740px;
+            }
+        }
+    }
+}
+
+
+
+.page-header,
+.content-area .site-main article {
+    width: 100% !important;
+    float: none !important;
+}
