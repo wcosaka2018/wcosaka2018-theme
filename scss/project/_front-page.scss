@@ -1,13 +1,65 @@
 .twentyseventeen-panel {
     border-top: none !important;
+    overflow: visible;
     .wrap {
         padding: 3em 1.5em;
+        > .entry-header {
+            position: relative;
+            text-align: center;
+            &::before {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateY(-2.25rem) translateX(-50%);
+                text-transform: uppercase;
+                content: "";
+                white-space: pre;
+                z-index: 1;
+                color: rgba($color-black, .05);
+                font-family: 'Roboto', sans-serif;
+                font-weight: 900;
+                line-height: 1;
+                font-size: 4rem;
+            }
+            .entry-title {
+                position: relative;
+                z-index: 2;
+                @include text-gradation();
+                font-size: 1.75rem;
+            }
+        }
     }
     &:first-child {
-        overflow: visible;
-        //position: relative;
         .entry-header {
             display: none;
+        }
+    }
+    &:nth-child(2) {
+        .entry-header {
+            &::before {
+                content: "Welcome";
+            }
+        }
+    }
+    &:nth-child(3) {
+        .entry-header {
+            &::before {
+                content: "Outline";
+            }
+        }
+    }
+    &:nth-child(4) {
+        .entry-header {
+            &::before {
+                content: "Blog";
+            }
+        }
+    }
+    &:nth-child(5) {
+        .entry-header {
+            &::before {
+                content: "Social Media";
+            }
         }
     }
 }

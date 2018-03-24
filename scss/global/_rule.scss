@@ -24,3 +24,9 @@ $video-size: 700px;
         box-shadow: none;
     }
 }
+
+@mixin text-gradation( $dig:85deg, $start:$color-lilac, $end:$color-green) {
+    background: -webkit-linear-gradient($dig, $start, $end);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
