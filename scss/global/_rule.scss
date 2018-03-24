@@ -31,6 +31,12 @@ $video-size: 700px;
     -webkit-text-fill-color: transparent;
 }
 
+@mixin bg-gradation() {
+    background:
+        linear-gradient(45deg,rgba(52,175,165,0.15),rgba(179,214,211,0.15),rgba(180,132,184,0.15)),
+        url(https://wcosaka2018.github.io/wcosaka2018-theme/images/bg-geometric.png);
+}
+
 @mixin bigIndexBefore( $content:"" ) {
     position: absolute;
     bottom: 0;

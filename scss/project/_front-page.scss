@@ -3,7 +3,7 @@
     overflow: visible;
     .wrap {
         position: relative;
-        padding: 3em 1.5em;
+        padding: 5em 1.5em 3em;
         > .entry-header {
             position: relative;
             text-align: center;
@@ -23,6 +23,7 @@
         }
     }
     &:nth-child(2) {
+        @include bg-gradation();
         .wrap {
             > .entry-header {
                 &::before {
@@ -98,6 +99,7 @@
         }
     }
     &:nth-child(4) {
+        @include bg-gradation();
         .wrap {
             > .entry-header {
                 &::before {

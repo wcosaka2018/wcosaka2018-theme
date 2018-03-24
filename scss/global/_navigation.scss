@@ -55,6 +55,13 @@
             display: none;
         }
     }
+    .site-navigation-fixed {
+        .navi-home {
+            @media screen and (min-width: 48em) {
+                display: block;
+            }
+        }
+    }
 }
 
 .navi-ticket {
