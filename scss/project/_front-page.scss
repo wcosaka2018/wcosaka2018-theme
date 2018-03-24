@@ -23,7 +23,6 @@
         }
     }
     &:nth-child(2) {
-        @include bg-gradation();
         .wrap {
             > .entry-header {
                 &::before {
@@ -99,7 +98,6 @@
         }
     }
     &:nth-child(4) {
-        @include bg-gradation();
         .wrap {
             > .entry-header {
                 &::before {
@@ -129,6 +127,16 @@
             > .entry-header {
                 &::before {
                     content: "Social Media";
+                }
+            }
+        }
+    }
+    &:nth-child(2n) {
+        @include bg-gradation();
+        .wrap {
+            > .entry-header {
+                &::before {
+                    color: rgba($color-white, .95);
                 }
             }
         }

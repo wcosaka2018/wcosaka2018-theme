@@ -39,7 +39,7 @@ $video-size: 700px;
 
 @mixin bigIndexBefore( $content:"" ) {
     position: absolute;
-    bottom: 0;
+    bottom: .1em;
     left: 50%;
     transform: translateY(0) translateX(-50%);
     text-transform: uppercase;
