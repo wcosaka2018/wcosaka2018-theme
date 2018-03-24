@@ -2,6 +2,7 @@
     border-top: none !important;
     overflow: visible;
     .wrap {
+        position: relative;
         padding: 3em 1.5em;
         > .entry-header {
             position: relative;
@@ -26,6 +27,7 @@
                 z-index: 2;
                 @include text-gradation();
                 font-size: 1.75rem;
+                text-transform: none;
             }
         }
     }
@@ -65,19 +67,22 @@
 }
 
 .link-ticket-front {
-    margin-top: -4em;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(.5em) translateX(-50%);
     z-index: 9999;
     text-align: center;
     @media screen and (min-width: 48em) {
-        margin-top: -6em;
+        transform: translateY(-2.75em) translateX(-50%);
     }
     .btn-link-default {
         @include btn-link(inline-block);
         margin: 0 auto;
-        width: 100%;
+        width: 290px;
         font-size: 1rem;
         @media screen and (min-width: 48em) {
-            width: 360px;
+            width: 480px;
             font-size: 1.25rem;
         }
     }

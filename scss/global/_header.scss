@@ -17,7 +17,7 @@
     .custom-header-media,
     .wp-custom-header,
     iframe, img {
-        margin: auto 0 auto auto;
+        margin: auto 1.5em auto auto;
         width: 70vw;
         height: 50vw;
         @media screen and (min-width: 48em) {
@@ -35,7 +35,7 @@
         margin: 20vw 0 0 30%;
         opacity: .5;
         @media screen and (min-width: 48em) {
-            margin: auto 0 auto auto;
+            margin: auto 1.5em auto auto;
             opacity: 1;
         }
         &:before {
