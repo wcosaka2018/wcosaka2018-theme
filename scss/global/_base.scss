@@ -5,8 +5,12 @@ body {
 .block-area {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     .block-area-half {
-        width: calc((100% - 3em) / 2);
+        width: 100%;
         box-sizing: border-box;
+        @media screen and (min-width: 48em) {
+            width: calc((100% - 3em) / 2);
+        }
     }
 }
