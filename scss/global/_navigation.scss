@@ -37,6 +37,11 @@
 }
 
 .main-navigation {
+    a {
+        &:hover {
+            color: initial;
+        }
+    }
     > div {
         > ul {
             border: none;
@@ -58,20 +63,11 @@
         margin-top: 0;
     }
     a {
-        display: block;
-        padding: 1em 2em;
-        border-radius: 1.75em;
-        background: linear-gradient(to right, $color-green, $color-lilac);
-        color: $color-white;
-        text-align: center;
+        @include btn-link();
         @media screen and (min-width: 48em) {
             text-align: left;
         }
     }
-}
-
-.navi-ticket-front {
-
 }
 
 @media screen and (min-width: 48em) {

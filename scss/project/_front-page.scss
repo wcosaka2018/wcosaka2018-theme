@@ -1,0 +1,31 @@
+.twentyseventeen-panel {
+    .wrap {
+        padding: 4em 1.5em;
+    }
+    &:first-child {
+        overflow: visible;
+        //position: relative;
+        .entry-header {
+            display: none;
+        }
+    }
+}
+
+.link-ticket-front {
+    margin-top: -4em;
+    z-index: 9999;
+    text-align: center;
+    @media screen and (min-width: 48em) {
+        margin-top: -6em;
+    }
+    .btn-link-default {
+        @include btn-link(inline-block);
+        margin: 0 auto;
+        width: 100%;
+        font-size: 1rem;
+        @media screen and (min-width: 48em) {
+            width: 360px;
+            font-size: 1.25rem;
+        }
+    }
+}

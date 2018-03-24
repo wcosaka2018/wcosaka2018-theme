@@ -7,3 +7,20 @@ $color-black: #131E24;
 $color-white: #ffffff;
 
 $video-size: 700px;
+
+@mixin btn-link( $display:block ) {
+    display: $display;
+    padding: 1em 2em;
+    border-radius: 1.75em;
+    background: linear-gradient(to right, $color-green, $color-lilac);
+    color: $color-white;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: none;
+    &:hover {
+        background: linear-gradient(to right, rgba($color-green,.8),rgba( $color-lilac,.8)) $color-white;
+        color: $color-white;
+        box-shadow: none;
+    }
+}
