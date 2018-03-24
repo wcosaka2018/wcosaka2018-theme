@@ -2,15 +2,29 @@ body {
     font-size: 14px;
 }
 
+.edit-link {
+    display: none !important;
+}
+
+.cf {
+    &:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+
 .block-area {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    .block-area-half {
+    .block-area-inner {
         width: 100%;
         box-sizing: border-box;
-        @media screen and (min-width: 48em) {
+    }
+    @media screen and (min-width: 48em) {
+        .block-area-half {
             width: calc((100% - 3em) / 2);
-        }
+         }
     }
 }

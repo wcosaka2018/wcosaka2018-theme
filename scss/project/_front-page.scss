@@ -11,7 +11,7 @@
                 position: absolute;
                 bottom: 0;
                 left: 50%;
-                transform: translateY(-2.25rem) translateX(-50%);
+                transform: translateY(0) translateX(-50%);
                 text-transform: uppercase;
                 content: "";
                 white-space: pre;
@@ -28,6 +28,7 @@
                 @include text-gradation();
                 font-size: 1.75rem;
                 text-transform: none;
+                margin-bottom: 1em;
             }
         }
     }
@@ -47,6 +48,63 @@
         .entry-header {
             &::before {
                 content: "Outline";
+            }
+        }
+        .block-area {
+            margin-bottom: 2em;
+            @media screen and (min-width: 48em) {
+                //.block-area-inner {
+                //    display: flex;
+                //    flex-wrap: wrap;
+                //    justify-content: space-between;
+                //}
+                .block-area-left {
+                    width: 60%;
+                }
+                .block-area-right {
+                    width: calc(40% - 3em);
+                }
+            }
+        }
+        h3 {
+            font-size: 1.15rem;
+            padding: 0 0 .25em;
+            margin: 0 0 1em;
+            border-bottom: 1px solid rgba($color-black, .1);
+            //@media screen and (min-width: 48em) {
+            //    font-size: .9rem;
+            //    margin: 0;
+            //    width: 4em;
+            //}
+        }
+        h4 {
+            font-size: .9rem;
+            padding: 0;
+            margin: 0 0 .5em;
+        }
+        p {
+            margin: 0 0 .5em;
+        }
+        .index-sub {
+            font-weight: bold;
+            margin-right: 1em;
+        }
+        .outline-detail {
+            margin: 0 0 1.5em;
+            //@media screen and (min-width: 48em) {
+            //    margin: 0;
+            //    width: calc(100% - 6em);
+            //}
+        }
+        address {
+            margin: -1em 0 .5rem;
+            font-size: .8rem;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            @media screen and (min-width: 48em) {
+                height: 400px;
             }
         }
     }
