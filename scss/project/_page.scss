@@ -1,10 +1,50 @@
-
-.blog {
+body:not(.home) {
     .site-header {
         @media screen and (min-width: 48em) {
             padding-top: 70px;
         }
     }
+
+    .page-header {
+        background: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/wapu_bg.jpg") center center no-repeat;
+        background-size: contain;
+        min-height: 120px;
+        padding: 0 !important;
+        margin: 0 0 4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        @media screen and (min-width: 48em) {
+            margin: 2em 0 4em;
+        }
+        .page-title {
+            @include text-gradation();
+            position: relative;
+            font-size: 1rem !important;
+            &:before,
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 3em;
+                height: 2px;
+                margin-top: -1px;
+                position: absolute;
+                top: 50%;
+                background: linear-gradient(85deg, $color-green, $color-lilac);
+            }
+            &:before {
+                left: -3.5em;
+            }
+            &:after {
+                right: -3.5em;
+            }
+        }
+    }
+
+
+
     .custom-header {
         display: none;
     }
@@ -17,7 +57,13 @@
     }
 }
 
-
+.blog {
+    .entry-title {
+        a {
+            @include text-gradation();
+        }
+    }
+}
 
 .page-header,
 .content-area .site-main article {
