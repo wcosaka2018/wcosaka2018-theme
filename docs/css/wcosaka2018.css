@@ -371,6 +371,10 @@ body {
   .js .main-navigation ul.menu > li:hover ul {
     left: 0;
   }
+  .js .main-navigation ul.menu > li:last-child:hover ul {
+    left: auto;
+    right: 0;
+  }
 }
 
 .site-footer {
