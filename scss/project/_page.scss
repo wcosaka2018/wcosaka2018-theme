@@ -18,7 +18,8 @@
 @mixin headerTitleStyle() {
     @include text-gradation();
     position: relative;
-    font-size: 1rem !important;
+    font-size: 1.25rem !important;
+    text-transform: none;
     &:before,
     &:after {
         content: "";
