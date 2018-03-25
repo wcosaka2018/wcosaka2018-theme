@@ -1,0 +1,99 @@
+body:not(.home) {
+    .entry-content {
+        h1 {
+            display: none;
+        }
+        h2 {
+            font-size: 1.25rem;
+            color: rgba($color-black, 1);
+        }
+        h3 {
+            font-size: 1.15rem;
+            color: rgba($color-black, .9);
+        }
+        h4 {
+            font-size: 1rem;
+            color: rgba($color-black, .8);
+        }
+        h5 {
+            font-size: 1rem;
+            color: rgba($color-black, .75);
+        }
+        h6 {
+            font-size: .9rem;
+            color: rgba($color-black, .75);
+        }
+        blockquote {
+            margin: 1.5em 0;
+            padding: 1.5em;
+            position: relative;
+            p {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            &:before, &:after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 3em;
+                height: 3em;
+                border-width: 1px;
+                border-color: rgba($color-black, .15)
+            }
+            &:before {
+                top: 0;
+                left: 0;
+                border-top-style: solid;
+                border-left-style: solid;
+            }
+            &:after {
+                bottom: 0;
+                right: 0;
+                border-bottom-style: solid;
+                border-right-style: solid;
+            }
+        }
+        table {
+            tr {
+                border-bottom: 1px solid rgba($color-green, .5);
+                th, td {
+                    padding: .5em 1em;
+                }
+            }
+            thead {
+                tr {
+                    th, td {
+                        background: rgba($color-green, .15);
+                        border-bottom: 2px solid rgba($color-green, .75);
+                    }
+                }
+            }
+        }
+        //dl {
+        //    dt {
+        //    }
+        //    dd {
+        //    }
+        //}
+        ul, ol {
+            padding-left: 1.5em;
+            margin: 0 0 1em;
+            ul, ol {
+                padding-left: 1.75em;
+                margin: 0;
+            }
+        }
+        a {
+            color: $color-green;
+            box-shadow: none;
+            text-decoration: underline;
+        }
+        code {
+            border: 1px solid rgba($color-brown, .5);
+            background-color: rgba($color-brown, .1);
+            padding: 0 .5em;
+            border-radius: 4px;
+        }
+    }
+}

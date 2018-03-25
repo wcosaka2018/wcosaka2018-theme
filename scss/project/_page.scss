@@ -1,3 +1,43 @@
+@mixin headerStyle() {
+    background: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/wapu_bg.jpg") center center no-repeat;
+    background-size: contain;
+    min-height: 120px;
+    padding: 0 !important;
+    margin: 0 0 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-transform: none;
+    @media screen and (min-width: 48em) {
+        margin: 2em 0 4em;
+    }
+}
+
+@mixin headerTitleStyle() {
+    @include text-gradation();
+    position: relative;
+    font-size: 1rem !important;
+    &:before,
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 3em;
+        height: 2px;
+        margin-top: -1px;
+        position: absolute;
+        top: 50%;
+        background: linear-gradient(85deg, $color-green, $color-lilac);
+    }
+    &:before {
+        left: -3.5em;
+    }
+    &:after {
+        right: -3.5em;
+    }
+}
+
 body:not(.home) {
     .site-header {
         @media screen and (min-width: 48em) {
@@ -5,45 +45,25 @@ body:not(.home) {
         }
     }
 
+    .single-featured-image-header {
+        display: none;
+    }
+
     .page-header {
-        background: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/wapu_bg.jpg") center center no-repeat;
-        background-size: contain;
-        min-height: 120px;
-        padding: 0 !important;
-        margin: 0 0 4em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        @media screen and (min-width: 48em) {
-            margin: 2em 0 4em;
-        }
+        @include headerStyle();
         .page-title {
-            @include text-gradation();
-            position: relative;
-            font-size: 1rem !important;
-            &:before,
-            &:after {
-                content: "";
-                display: inline-block;
-                width: 3em;
-                height: 2px;
-                margin-top: -1px;
-                position: absolute;
-                top: 50%;
-                background: linear-gradient(85deg, $color-green, $color-lilac);
-            }
-            &:before {
-                left: -3.5em;
-            }
-            &:after {
-                right: -3.5em;
-            }
+            @include headerTitleStyle();
         }
     }
 
-
+    &:not(.blog) {
+        .entry-header {
+            @include headerStyle();
+            .entry-title {
+                @include headerTitleStyle();
+            }
+        }
+    }
 
     .custom-header {
         display: none;
@@ -57,8 +77,11 @@ body:not(.home) {
     }
 }
 
-.blog {
+.blog,
+.single-post,
+.single-wcb_sponsor {
     .entry-title {
+        @include text-gradation();
         a {
             @include text-gradation();
         }
