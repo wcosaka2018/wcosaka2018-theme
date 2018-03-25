@@ -57,7 +57,7 @@ body:not(.home) {
         }
     }
 
-    &:not(.blog) {
+    &:not(.blog):not(.single) {
         .entry-header {
             @include headerStyle();
             .entry-title {

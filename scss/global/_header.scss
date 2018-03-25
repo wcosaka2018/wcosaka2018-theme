@@ -39,8 +39,15 @@
             opacity: 1;
         }
         &:before {
-            height: 100% !important;
-            background: linear-gradient(45deg, rgba(52, 175, 165, 0.15), rgba(179, 214, 211, 0.15), rgba(180, 132, 184, 0.15)), url(https://wcosaka2018.github.io/wcosaka2018-theme/images/bg-geometric-movie.png);
+            display: none;
+            //@media screen and (min-width: 48em) {
+            //    display: block;
+            //    height: 100% !important;
+            //    background: linear-gradient(45deg, rgba(52, 175, 165, 0.15), rgba(179, 214, 211, 0.15), rgba(180, 132, 184, 0.15)), url(https://wcosaka2018.github.io/wcosaka2018-theme/images/bg-geometric-movie.png);
+            //}
+        }
+        img {
+            object-fit: contain;
         }
     }
     .wp-custom-header {
