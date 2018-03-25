@@ -43,6 +43,9 @@
 
 .main-navigation {
     padding-top: 1px;
+    @media screen and (min-width: 48em) {
+        padding-top: 0;
+    }
     a {
         &:hover {
             color: initial;
@@ -77,6 +80,7 @@
     margin-top: 2em;
     @media screen and (min-width: 48em) {
         margin-top: 0;
+        padding-left: 1em !important;
     }
     a {
         @include btn-link();
@@ -90,7 +94,7 @@
     .navigation-top {
         .wrap {
             max-width: 100vw;
-            padding: 0.75em 1.5em;
+            padding: 0 1.5em;
         }
     }
     .js {
@@ -99,10 +103,34 @@
                 display: flex;
                 justify-content: flex-end;
                 li {
+                    padding: .75em 0;
                     &:first-child {
                         flex: 1;
                         a {
                             display: inline-block;
+                        }
+                    }
+                    &:not(:first-child):not(.navi-ticket){
+                        &:hover {
+                            background-color: rgba($color-green, .25);
+                        }
+                    }
+                    &:before,
+                    &:after {
+                        display: none;
+                    }
+                    ul {
+                        border: none;
+                        background-color: rgba($color-green, .1);
+                        li {
+                            &:hover {
+                                background-color: rgba($color-green, .5);
+                            }
+                        }
+                    }
+                    &:hover {
+                        ul {
+                            left: 0;
                         }
                     }
                 }
