@@ -1,6 +1,9 @@
 .twentyseventeen-panel {
     border-top: none !important;
     overflow: visible;
+    .panel-image {
+        display: none;
+    }
     .wrap {
         position: relative;
         padding: 5em 1.5em 3em;
