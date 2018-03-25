@@ -171,6 +171,14 @@
                             left: 0;
                         }
                     }
+                    &:last-child {
+                        &:hover {
+                            ul {
+                                left: auto;
+                                right: 0;
+                            }
+                        }
+                    }
                 }
             }
         }
