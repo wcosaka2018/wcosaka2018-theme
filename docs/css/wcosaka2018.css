@@ -148,7 +148,7 @@ body {
 
 .site-header .site-branding .site-branding-text .site-title a {
   display: block;
-  background-image: url("../docs/images/layout/logo-front.svg");
+  background-image: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/layout/logo-front.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top left;
