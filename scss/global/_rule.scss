@@ -8,18 +8,18 @@ $color-white: #ffffff;
 
 $video-size: 700px;
 
-@mixin btn-link( $display:block ) {
+@mixin btn-link( $display:block, $color-start:rgba($color-green, .9), $color-end:rgba($color-lilac, .9) ) {
     display: $display;
     padding: 1em 2em;
     border-radius: 1.75em;
-    background: linear-gradient(to right, rgba($color-green, .9), rgba($color-lilac, .9)) $color-white;
+    background: linear-gradient(to right, $color-start, rgba($color-lilac, .9));
     color: $color-white;
     text-align: center;
     position: relative;
     z-index: 2;
     box-shadow: none;
     &:hover {
-        background: linear-gradient(to right, rgba($color-green,.8),rgba( $color-lilac,.8)) $color-white;
+        background: linear-gradient(to right, rgba($color-green,.8),rgba( $color-lilac,.8));
         color: $color-white;
         box-shadow: none;
     }
