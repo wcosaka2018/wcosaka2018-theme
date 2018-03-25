@@ -1,6 +1,7 @@
 .site-header {
     .navigation-top {
         width: 100vw;
+        background-color: transparent;
         padding-bottom: 1em;
         position: fixed;
         top: 0;
@@ -8,12 +9,16 @@
         bottom: auto;
         border: none;
         z-index: 9999;
+        @media screen and (min-width: 48em) {
+            padding-bottom: 0;
+            background-color: $color-white;
+        }
         &:before {
             content: "";
             display: block;
             height: 8px;
             width: 100%;
-            background: linear-gradient(to right, rgba($color-green, .5), rgba($color-lilac, .5));
+            background: $color-white linear-gradient(to right, rgba($color-green, .5), rgba($color-lilac, .5));
         }
         .menu-toggle {
             z-index: 99999;
@@ -37,6 +42,7 @@
 }
 
 .main-navigation {
+    padding-top: 1px;
     a {
         &:hover {
             color: initial;
@@ -46,6 +52,9 @@
         > ul {
             border: none;
         }
+    }
+    &.toggled-on {
+        background-color: $color-white;
     }
 }
 
