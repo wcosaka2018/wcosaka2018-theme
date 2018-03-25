@@ -700,6 +700,10 @@ body:not(.home) .custom-header {
   overflow: visible;
 }
 
+.twentyseventeen-panel .panel-image {
+  display: none;
+}
+
 .twentyseventeen-panel .wrap {
   position: relative;
   padding: 5em 1.5em 3em;
