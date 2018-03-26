@@ -101,7 +101,7 @@ body:not(.home) {
             text-align: center;
             a {
                 margin: 0 auto;
-                @include btn-link(inline-block);
+                @include btn-link(inline-block, 4px);
             }
         }
     }
