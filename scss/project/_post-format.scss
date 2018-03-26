@@ -95,5 +95,14 @@ body:not(.home) {
             padding: 0 .5em;
             border-radius: 4px;
         }
+
+        .btn-link {
+            margin: 2em 0;
+            text-align: center;
+            a {
+                margin: 0 auto;
+                @include btn-link(inline-block);
+            }
+        }
     }
 }
