@@ -570,7 +570,7 @@ body:not(.home) .entry-content .btn-link a {
   margin: 0 auto;
   display: inline-block;
   padding: 1em 2em;
-  border-radius: 1.75em;
+  border-radius: 4px;
   background: #ffffff linear-gradient(to right, rgba(52, 175, 165, 0.9), rgba(180, 132, 184, 0.9));
   color: #ffffff;
   text-align: center;
