@@ -8,10 +8,10 @@ $color-white: #ffffff;
 
 $video-size: 700px;
 
-@mixin btn-link( $display:block, $color-start:$color-green, $color-end:$color-lilac ) {
+@mixin btn-link( $display:block, $radius:1.75em, $color-start:$color-green, $color-end:$color-lilac ) {
     display: $display;
     padding: 1em 2em;
-    border-radius: 1.75em;
+    border-radius: $radius;
     background: $color-white linear-gradient(to right, rgba($color-start, .9), rgba($color-end, .9));
     color: $color-white;
     text-align: center;
