@@ -25,7 +25,7 @@
             }
         }
     }
-    &:nth-child(2) {
+    &.post-297 {
         .wrap {
             > .entry-header {
                 &::before {
@@ -34,7 +34,7 @@
             }
         }
     }
-    &:nth-child(3) {
+    &.post-795 {
         .wrap {
             > .entry-header {
                 &::before {
@@ -100,7 +100,7 @@
             }
         }
     }
-    &:nth-child(4) {
+    &.post-799 {
         .wrap {
             > .entry-header {
                 &::before {
@@ -125,15 +125,15 @@
             }
         }
     }
-    &:nth-child(5) {
-        .wrap {
-            > .entry-header {
-                &::before {
-                    content: "Social Media";
-                }
-            }
-        }
-    }
+    //&:nth-child(5) {
+    //    .wrap {
+    //        > .entry-header {
+    //            &::before {
+    //                content: "Social Media";
+    //            }
+    //        }
+    //    }
+    //}
     &:nth-child(2n) {
         @include bg-gradation();
         .wrap {
