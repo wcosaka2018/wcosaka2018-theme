@@ -25,7 +25,7 @@
             }
         }
     }
-    &.post-297 {
+    &:nth-child(2) {
         .wrap {
             > .entry-header {
                 &::before {
@@ -34,7 +34,32 @@
             }
         }
     }
-    &.post-795 {
+    &:nth-child(3) {
+        .wrap {
+            > .entry-header {
+                &::before {
+                    content: "Blog";
+                }
+            }
+        }
+        .recent-posts {
+            .entry-header {
+                @media screen and (min-width: 48em) {
+                    margin: 0 0 .5em;
+                }
+                .entry-title {
+                    a {
+                        @include text-gradation();
+                        font-weight: bold;
+                        &:not(:hover) {
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &:nth-child(4) {
         .wrap {
             > .entry-header {
                 &::before {
@@ -100,40 +125,15 @@
             }
         }
     }
-    &.post-799 {
+    &:nth-child(5) {
         .wrap {
             > .entry-header {
                 &::before {
-                    content: "Blog";
-                }
-            }
-        }
-        .recent-posts {
-            .entry-header {
-                @media screen and (min-width: 48em) {
-                    margin: 0 0 .5em;
-                }
-                .entry-title {
-                    a {
-                        @include text-gradation();
-                        font-weight: bold;
-                        &:not(:hover) {
-                            box-shadow: none;
-                        }
-                    }
+                    content: "Social Media";
                 }
             }
         }
     }
-    //&:nth-child(5) {
-    //    .wrap {
-    //        > .entry-header {
-    //            &::before {
-    //                content: "Social Media";
-    //            }
-    //        }
-    //    }
-    //}
     &:nth-child(2n) {
         @include bg-gradation();
         .wrap {
