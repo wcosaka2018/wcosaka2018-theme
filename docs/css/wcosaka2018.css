@@ -1,5 +1,6 @@
 body {
   font-size: 14px;
+  overflow-wrap: break-word;
 }
 
 body:not(.home) .site {
@@ -42,6 +43,18 @@ body:not(.home) .site {
   .block-area .block-area-half {
     width: calc((100% - 3em) / 2);
   }
+}
+
+.comment-body {
+  margin-left: 0;
+}
+
+.comment-body .comment-author {
+  display: none;
+}
+
+.comment-body .reply {
+  padding-left: 2em;
 }
 
 .site-header {
@@ -611,7 +624,9 @@ body:not(.home) .entry-content .btn-link a:hover {
 }
 
 body:not(.home) .single-featured-image-header {
-  display: none;
+  border: none;
+  background-color: transparent;
+  padding-top: 3em;
 }
 
 body:not(.home) .page-header {
