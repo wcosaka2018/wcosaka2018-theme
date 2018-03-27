@@ -1,5 +1,7 @@
 @mixin headerStyle() {
-    background: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/wapu_bg.jpg") center center no-repeat;
+    background-image: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/wapuu/wapuu_bg.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: contain;
     min-height: 120px;
     padding: 0 !important;
@@ -93,4 +95,8 @@ body:not(.home) {
 .content-area .site-main article {
     width: 100% !important;
     float: none !important;
+}
+
+.site-content-contain {
+    background-color: transparent;
 }
