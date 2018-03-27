@@ -1,5 +1,6 @@
 body {
     font-size: 14px;
+    overflow-wrap : break-word;
     &:not(.home) {
         .site {
             width: 100%;
@@ -39,5 +40,15 @@ body {
         .block-area-half {
             width: calc((100% - 3em) / 2);
          }
+    }
+}
+
+.comment-body {
+    margin-left: 0;
+    .comment-author {
+        display: none;
+    }
+    .reply {
+        padding-left: 2em;
     }
 }
