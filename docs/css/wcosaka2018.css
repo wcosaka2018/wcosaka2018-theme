@@ -2,6 +2,21 @@ body {
   font-size: 14px;
 }
 
+body:not(.home) .site {
+  width: 100%;
+  min-height: 100%;
+  background-image: url("../docs/images/layout/logo-main-bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 250px;
+}
+
+@media screen and (min-width: 48em) {
+  body:not(.home) .site {
+    background: none;
+  }
+}
+
 .edit-link {
   display: none !important;
 }
@@ -31,12 +46,13 @@ body {
 
 .site-header {
   padding-top: 60px;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 @media screen and (min-width: 48em) {
   .site-header {
     padding-top: 180px;
+    background-color: #ffffff;
   }
 }
 
@@ -248,7 +264,7 @@ body {
 
 @media screen and (min-width: 48em) {
   .main-navigation a {
-    font-size: 1rem;
+    font-size: .8rem;
   }
 }
 
@@ -333,24 +349,27 @@ body {
     display: inline-block;
     width: 48px;
     height: 48px;
-    overflow: hidden;
     padding-left: 0;
     padding-right: 0;
+    text-indent: -1000%;
   }
   .js .main-navigation ul.menu > li:first-child a:after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 48px;
+    width: 150px;
     height: 48px;
-    line-height: 52px;
     display: block;
-    background: #ffffff;
-    color: rgba(52, 175, 165, 0.5);
-    font-size: 36px;
-    content: "\f102";
-    font-family: dashicons;
     text-indent: 0;
+    background-image: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/layout/logo-main.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .15;
+    transition: .3s;
+  }
+  .js .main-navigation ul.menu > li:first-child a:hover:after {
+    opacity: 1;
   }
   .js .main-navigation ul.menu > li:not(:first-child):not(.navi-ticket):hover {
     background-color: rgba(52, 175, 165, 0.25);
@@ -596,7 +615,9 @@ body:not(.home) .single-featured-image-header {
 }
 
 body:not(.home) .page-header {
-  background: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/wapu_bg.jpg") center center no-repeat;
+  background-image: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/wapuu/wapuu_bg.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: contain;
   min-height: 120px;
   padding: 0 !important;
@@ -644,7 +665,9 @@ body:not(.home) .page-header .page-title:after {
 }
 
 body:not(.home):not(.blog):not(.single) .entry-header {
-  background: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/wapu_bg.jpg") center center no-repeat;
+  background-image: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/wapuu/wapuu_bg.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: contain;
   min-height: 120px;
   padding: 0 !important;
@@ -723,6 +746,10 @@ body:not(.home) .custom-header {
   float: none !important;
 }
 
+.site-content-contain {
+  background-color: transparent;
+}
+
 .twentyseventeen-panel {
   border-top: none !important;
   overflow: visible;
@@ -778,83 +805,83 @@ body:not(.home) .custom-header {
 }
 
 .twentyseventeen-panel:nth-child(3) .wrap > .entry-header::before {
-  content: "Outline";
-}
-
-.twentyseventeen-panel:nth-child(3) .block-area {
-  margin-bottom: 2em;
-}
-
-@media screen and (min-width: 48em) {
-  .twentyseventeen-panel:nth-child(3) .block-area .block-area-left {
-    width: 60%;
-  }
-  .twentyseventeen-panel:nth-child(3) .block-area .block-area-right {
-    width: calc(40% - 3em);
-  }
-}
-
-.twentyseventeen-panel:nth-child(3) h3 {
-  font-size: 1.15rem;
-  padding: 0 0 .25em;
-  margin: 0 0 1em;
-  border-bottom: 1px solid rgba(19, 30, 36, 0.1);
-}
-
-.twentyseventeen-panel:nth-child(3) h4 {
-  font-size: .9rem;
-  padding: 0;
-  margin: 0 0 .5em;
-}
-
-.twentyseventeen-panel:nth-child(3) p {
-  margin: 0 0 .5em;
-}
-
-.twentyseventeen-panel:nth-child(3) .index-sub {
-  font-weight: bold;
-  margin-right: 1em;
-}
-
-.twentyseventeen-panel:nth-child(3) .outline-detail {
-  margin: 0 0 1.5em;
-}
-
-.twentyseventeen-panel:nth-child(3) address {
-  margin: .5em 0 .5rem;
-  font-size: .8rem;
-}
-
-.twentyseventeen-panel:nth-child(3) iframe {
-  width: 100%;
-  height: 300px;
-}
-
-@media screen and (min-width: 48em) {
-  .twentyseventeen-panel:nth-child(3) iframe {
-    height: 400px;
-  }
-}
-
-.twentyseventeen-panel:nth-child(4) .wrap > .entry-header::before {
   content: "Blog";
 }
 
 @media screen and (min-width: 48em) {
-  .twentyseventeen-panel:nth-child(4) .recent-posts .entry-header {
+  .twentyseventeen-panel:nth-child(3) .recent-posts .entry-header {
     margin: 0 0 .5em;
   }
 }
 
-.twentyseventeen-panel:nth-child(4) .recent-posts .entry-header .entry-title a {
+.twentyseventeen-panel:nth-child(3) .recent-posts .entry-header .entry-title a {
   background: -webkit-linear-gradient(85deg, #B484B8, #34AFA5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
 
-.twentyseventeen-panel:nth-child(4) .recent-posts .entry-header .entry-title a:not(:hover) {
+.twentyseventeen-panel:nth-child(3) .recent-posts .entry-header .entry-title a:not(:hover) {
   box-shadow: none;
+}
+
+.twentyseventeen-panel:nth-child(4) .wrap > .entry-header::before {
+  content: "Outline";
+}
+
+.twentyseventeen-panel:nth-child(4) .block-area {
+  margin-bottom: 2em;
+}
+
+@media screen and (min-width: 48em) {
+  .twentyseventeen-panel:nth-child(4) .block-area .block-area-left {
+    width: 60%;
+  }
+  .twentyseventeen-panel:nth-child(4) .block-area .block-area-right {
+    width: calc(40% - 3em);
+  }
+}
+
+.twentyseventeen-panel:nth-child(4) h3 {
+  font-size: 1.15rem;
+  padding: 0 0 .25em;
+  margin: 0 0 1em;
+  border-bottom: 1px solid rgba(19, 30, 36, 0.1);
+}
+
+.twentyseventeen-panel:nth-child(4) h4 {
+  font-size: .9rem;
+  padding: 0;
+  margin: 0 0 .5em;
+}
+
+.twentyseventeen-panel:nth-child(4) p {
+  margin: 0 0 .5em;
+}
+
+.twentyseventeen-panel:nth-child(4) .index-sub {
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.twentyseventeen-panel:nth-child(4) .outline-detail {
+  margin: 0 0 1.5em;
+}
+
+.twentyseventeen-panel:nth-child(4) address {
+  margin: .5em 0 .5rem;
+  font-size: .8rem;
+}
+
+.twentyseventeen-panel:nth-child(4) iframe {
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (min-width: 48em) {
+  .twentyseventeen-panel:nth-child(4) iframe {
+    height: 400px;
+  }
 }
 
 .twentyseventeen-panel:nth-child(5) .wrap > .entry-header::before {
