@@ -615,7 +615,7 @@ body:not(.home) .single-featured-image-header {
 }
 
 body:not(.home) .page-header {
-  background-image: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/wapuu/wapuu_bg.svg");
+  background-image: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/wapuu/maido-wapuu-line.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -665,7 +665,7 @@ body:not(.home) .page-header .page-title:after {
 }
 
 body:not(.home):not(.blog):not(.single) .entry-header {
-  background-image: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/wapuu/wapuu_bg.svg");
+  background-image: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/wapuu/maido-wapuu-line.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
