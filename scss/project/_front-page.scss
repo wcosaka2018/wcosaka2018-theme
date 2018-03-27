@@ -38,6 +38,31 @@
         .wrap {
             > .entry-header {
                 &::before {
+                    content: "Blog";
+                }
+            }
+        }
+        .recent-posts {
+            .entry-header {
+                @media screen and (min-width: 48em) {
+                    margin: 0 0 .5em;
+                }
+                .entry-title {
+                    a {
+                        @include text-gradation();
+                        font-weight: bold;
+                        &:not(:hover) {
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &:nth-child(4) {
+        .wrap {
+            > .entry-header {
+                &::before {
                     content: "Outline";
                 }
             }
@@ -97,31 +122,6 @@
             height: 300px;
             @media screen and (min-width: 48em) {
                 height: 400px;
-            }
-        }
-    }
-    &:nth-child(4) {
-        .wrap {
-            > .entry-header {
-                &::before {
-                    content: "Blog";
-                }
-            }
-        }
-        .recent-posts {
-            .entry-header {
-                @media screen and (min-width: 48em) {
-                    margin: 0 0 .5em;
-                }
-                .entry-title {
-                    a {
-                        @include text-gradation();
-                        font-weight: bold;
-                        &:not(:hover) {
-                            box-shadow: none;
-                        }
-                    }
-                }
             }
         }
     }

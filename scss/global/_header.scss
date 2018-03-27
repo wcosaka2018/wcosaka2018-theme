@@ -1,8 +1,9 @@
 .site-header {
     padding-top: 60px;
-    background-color: $color-white;
+    background-color: transparent;
     @media screen and (min-width: 48em) {
         padding-top: 180px;
+        background-color: $color-white;
     }
     .custom-header {
         max-width: 100vw;
