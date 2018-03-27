@@ -5,7 +5,7 @@ body {
 body:not(.home) .site {
   width: 100%;
   min-height: 100%;
-  background-image: url("../docs/images/layout/logo-main-bg.png");
+  background-image: url("https://wcosaka2018.github.io/wcosaka2018-theme/images/layout/logo-main-bg.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 250px;
