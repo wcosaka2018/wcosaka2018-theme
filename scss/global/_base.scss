@@ -1,5 +1,18 @@
 body {
     font-size: 14px;
+    &:not(.home) {
+        .site {
+            width: 100%;
+            min-height: 100%;
+            background-image: url("../docs/images/layout/logo-main-bg.png");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: 250px;
+            @media screen and (min-width: 48em) {
+                background: none;
+            }
+        }
+    }
 }
 
 .edit-link {
