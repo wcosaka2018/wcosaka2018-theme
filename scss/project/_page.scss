@@ -49,7 +49,10 @@ body:not(.home) {
     }
 
     .single-featured-image-header {
-        display: none;
+        //display: none;
+        border: none;
+        background-color: transparent;
+        padding-top: 3em;
     }
 
     .page-header {
