@@ -1,0 +1,116 @@
+.page-slug-tickets{
+	.tix_tickets_table{
+		tr{
+			display: block;
+			width: 100%;
+			border: 1px solid #eee;
+			border-bottom: 2px solid #eee!important;
+			margin-bottom: 3%;
+			@media screen and (min-width: 48em) {
+      	border: none;
+				border-bottom: 1px solid rgba(52,175,165,0.5);
+				margin-bottom: 0;
+    	}
+		}
+		
+		thead{
+			display: none;
+			@media screen and (min-width: 48em) {
+                display: block;
+    	}
+		}
+			
+		tbody{
+			display: block;
+			width: 100%;
+			overflow: hidden;
+			
+			.tix-column-description{
+				border-top: 5px solid rgba(52, 175, 165, 0.75);
+				width: 100%;
+				display: block;
+				position: relative;
+				@media screen and (min-width: 48em) {
+        	border-top: none;
+					width: 52%;
+					display: inline-block;
+    		}
+				
+				&::after{
+					content:"";
+					position: absolute;
+					width: 95%;
+					left: 2.5%;
+					bottom: 0;
+					border-bottom: 1px solid #eee;
+					@media screen and (min-width: 48em) {
+						content:none;
+    			}
+				}
+				.tix-ticket-excerpt{
+					font-size: 0.75rem;
+				}
+			}
+			
+			.tix-column-price{
+				width: 50%;
+				@media screen and (min-width: 48em) {
+					width: 20%;
+					display: inline-block;
+    		}
+			}
+			
+			.tix-column-remaining{
+				overflow: visible;
+				width: 30%;
+				text-align: right;
+				font-weight:bold;
+				@media screen and (min-width: 48em) {
+					width: 10%;
+					display: inline-block;
+    		}
+
+				&::before{
+					content:"残数";
+					font-size: 0.75rem;
+					color:#666;
+					padding-right: 2px;
+					font-weight: normal;
+					@media screen and (min-width: 48em) {
+						content:none;
+    			}
+				}
+			}
+			
+			.tix-column-quantity{
+				width: 20%;
+					@media screen and (min-width: 48em) {
+						width:18%;
+    			}
+				
+				select{
+					width: 50px;
+					height: 38px;
+					background: rgba(52, 175, 165, 0.1);
+				}
+			}
+			
+			tr.tix-row-coupon{
+				border: none;
+				border-bottom: none;
+				margin-bottom: 0;
+			}
+
+		}
+	}
+	
+	input{
+		width: 100%;
+		margin: 0 auto;
+		@include btn-link(inline-block);
+		@media screen and (min-width: 48em) {
+			width: 150px;
+		}
+	}
+	
+}
