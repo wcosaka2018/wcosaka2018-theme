@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-size: 14px;
   overflow-wrap: break-word;
@@ -1031,4 +1032,225 @@ body:not(.home) .custom-header {
   .wcb_widget_sponsors .bronze .sponsor-logo {
     width: calc(100% / 5);
   }
+}
+
+.page-slug-tickets .tix_tickets_table tr {
+  display: block;
+  width: 100%;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #eee !important;
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix_tickets_table tr {
+    border: none;
+    border-bottom: 1px solid rgba(52, 175, 165, 0.5) !important;
+    margin-bottom: 0;
+  }
+}
+
+.page-slug-tickets .tix_tickets_table thead {
+  display: none;
+  font-size: 0;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix_tickets_table thead {
+    display: block;
+  }
+}
+
+.page-slug-tickets .tix_tickets_table thead th {
+  display: inline-block;
+  font-size: 0.85rem;
+}
+
+.page-slug-tickets .tix_tickets_table thead .tix-column-description {
+  width: 62%;
+}
+
+.page-slug-tickets .tix_tickets_table thead .tix-column-price {
+  width: 16%;
+}
+
+.page-slug-tickets .tix_tickets_table thead .tix-column-remaining {
+  width: 10%;
+}
+
+.page-slug-tickets .tix_tickets_table thead .tix-column-quantity {
+  width: 12%;
+}
+
+.page-slug-tickets .tix_tickets_table tbody {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  font-size: 0;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix_tickets_table tbody td {
+    padding: 1rem 1rem !important;
+  }
+}
+
+.page-slug-tickets .tix_tickets_table tbody .tix-column-description {
+  border-top: 5px solid rgba(52, 175, 165, 0.75);
+  width: 100%;
+  display: block;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix_tickets_table tbody .tix-column-description {
+    border-top: none;
+    width: 62%;
+    display: inline-block;
+  }
+}
+
+.page-slug-tickets .tix_tickets_table tbody .tix-column-description::after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  left: 2.5%;
+  bottom: 0;
+  border-bottom: 1px solid #eee;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix_tickets_table tbody .tix-column-description::after {
+    content: none;
+  }
+}
+
+.page-slug-tickets .tix_tickets_table tbody .tix-column-description .tix-ticket-excerpt {
+  font-size: 0.75rem;
+  color: #666666;
+}
+
+.page-slug-tickets .tix_tickets_table tbody .tix-column-price {
+  width: 42%;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix_tickets_table tbody .tix-column-price {
+    width: 16%;
+    display: inline-block;
+    font-weight: normal;
+  }
+}
+
+.page-slug-tickets .tix_tickets_table tbody .tix-column-remaining {
+  overflow: visible;
+  width: 35%;
+  text-align: right;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 0.85rem;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix_tickets_table tbody .tix-column-remaining {
+    width: 10%;
+    display: inline-block;
+    font-weight: normal;
+    text-align: left;
+  }
+}
+
+.page-slug-tickets .tix_tickets_table tbody .tix-column-remaining::before {
+  content: "残数";
+  font-size: 0.75rem;
+  color: #666;
+  padding-right: 2px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix_tickets_table tbody .tix-column-remaining::before {
+    content: none;
+  }
+}
+
+.page-slug-tickets .tix_tickets_table tbody .tix-column-quantity {
+  width: 23%;
+  display: inline-block;
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix_tickets_table tbody .tix-column-quantity {
+    width: 12%;
+  }
+}
+
+.page-slug-tickets .tix_tickets_table tbody .tix-column-quantity select {
+  width: 50px;
+  height: 38px;
+  background: rgba(52, 175, 165, 0.1);
+  text-align: center;
+}
+
+.page-slug-tickets .tix_tickets_table tbody tr.tix-row-coupon {
+  border: none;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.page-slug-tickets input {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 1em 2em;
+  border-radius: 1.75em;
+  background: #ffffff linear-gradient(to right, rgba(52, 175, 165, 0.9), rgba(180, 132, 184, 0.9));
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: none;
+  border-radius: 4px;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.page-slug-tickets input:hover {
+  background: #ffffff linear-gradient(to right, rgba(52, 175, 165, 0.7), rgba(180, 132, 184, 0.7));
+  color: #ffffff;
+  box-shadow: none;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets input {
+    width: 150px;
+    font-size: 0.85rem;
+  }
+}
+
+.page-slug-tickets input:active {
+  display: inline-block;
+  padding: 1em 2em;
+  border-radius: 1.75em;
+  background: #ffffff linear-gradient(to right, rgba(52, 175, 165, 0.9), rgba(180, 132, 184, 0.9));
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: none;
+  border-radius: 4px;
+  font-weight: normal;
+}
+
+.page-slug-tickets input:active:hover {
+  background: #ffffff linear-gradient(to right, rgba(52, 175, 165, 0.7), rgba(180, 132, 184, 0.7));
+  color: #ffffff;
+  box-shadow: none;
 }
