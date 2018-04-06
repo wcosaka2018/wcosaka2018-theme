@@ -5,34 +5,65 @@
 			width: 100%;
 			border: 1px solid #eee;
 			border-bottom: 2px solid #eee!important;
-			margin-bottom: 3%;
+			margin-bottom: 12px;
 			@media screen and (min-width: 48em) {
       	border: none;
-				border-bottom: 1px solid rgba(52,175,165,0.5);
+				border-bottom: 1px solid rgba(52,175,165,0.5)!important;
 				margin-bottom: 0;
     	}
 		}
 		
 		thead{
 			display: none;
+			font-size: 0;
 			@media screen and (min-width: 48em) {
-                display: block;
+				display: block;
     	}
+			
+			th{
+				display: inline-block;
+				font-size: 0.85rem;
+			}
+			
+			.tix-column-description{
+				width: 62%;
+			}
+			
+			.tix-column-price{
+				width: 16%;
+			}
+			
+			.tix-column-remaining{
+				width: 10%;
+			}
+			
+			.tix-column-quantity{
+				width: 12%;
+			}
+			
 		}
 			
 		tbody{
 			display: block;
 			width: 100%;
 			overflow: hidden;
+			font-size: 0;
+			
+			td{
+				@media screen and (min-width: 48em) {
+					padding: 1rem 1rem!important;
+				}
+			}
 			
 			.tix-column-description{
 				border-top: 5px solid rgba(52, 175, 165, 0.75);
 				width: 100%;
 				display: block;
 				position: relative;
+				font-size: 1rem;
 				@media screen and (min-width: 48em) {
         	border-top: none;
-					width: 52%;
+					width: 62%;
 					display: inline-block;
     		}
 				
@@ -49,25 +80,35 @@
 				}
 				.tix-ticket-excerpt{
 					font-size: 0.75rem;
+					color: #666666;
+					line-height: 1.2!important;
 				}
 			}
 			
 			.tix-column-price{
-				width: 50%;
+				width: 42%;
+				display: inline-block;
+				font-size: 0.85rem;
+				font-weight: bold;
 				@media screen and (min-width: 48em) {
-					width: 20%;
+					width: 16%;
 					display: inline-block;
+					font-weight: normal;
     		}
 			}
 			
 			.tix-column-remaining{
 				overflow: visible;
-				width: 30%;
+				width: 35%;
 				text-align: right;
 				font-weight:bold;
+				display: inline-block;
+				font-size: 0.85rem;
 				@media screen and (min-width: 48em) {
 					width: 10%;
 					display: inline-block;
+					font-weight: normal;
+					text-align: left;
     		}
 
 				&::before{
@@ -83,9 +124,12 @@
 			}
 			
 			.tix-column-quantity{
-				width: 20%;
+				width: 23%;
+				display: inline-block;
+				font-size: 0.85rem;
+				text-align: right;
 					@media screen and (min-width: 48em) {
-						width:18%;
+						width:12%;
     			}
 				
 				select{
@@ -108,8 +152,17 @@
 		width: 100%;
 		margin: 0 auto;
 		@include btn-link(inline-block);
+		border-radius: 4px;
+		font-weight:normal;
+		font-size: 1rem;
 		@media screen and (min-width: 48em) {
 			width: 150px;
+			font-size: 0.85rem;
+		}
+		&:active{
+			@include btn-link(inline-block);
+			border-radius: 4px;
+			font-weight:normal;
 		}
 	}
 	
