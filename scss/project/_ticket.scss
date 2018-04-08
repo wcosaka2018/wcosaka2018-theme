@@ -50,6 +50,7 @@
 			font-size: 0;
 			
 			td{
+				font-size: 0.85rem;
 				@media screen and (min-width: 48em) {
 					padding: 1rem 1rem!important;
 				}
@@ -130,6 +131,7 @@
 				text-align: right;
 					@media screen and (min-width: 48em) {
 						width:12%;
+						text-align: left;
     			}
 				
 				select{
@@ -142,14 +144,18 @@
 			
 			tr.tix-row-coupon{
 				border: none;
-				border-bottom: none;
+				border-bottom: none!important;
 				margin-bottom: 0;
+				font-size: 14px;
+				@media screen and (min-width: 48em) {
+						border-bottom: 1px solid rgba(52, 175, 165, 0.5) !important;;
+    			}
 			}
 
 		}
 	}
 	
-	input{
+	input[type="submit"]{
 		width: 100%;
 		margin: 0 auto;
 		@include btn-link(inline-block);
@@ -167,4 +173,162 @@
 		}
 	}
 	
+	
+	.tix-order-summary{
+		thead{
+
+			.tix-column-description{
+				width: 52%;
+			}
+			
+			.tix-column-per-ticket{
+				width: 22%;
+			}
+			
+			.tix-column-quantity{
+				width: 8%;
+			}
+
+			.tix-column-price{
+				width: 18%;
+			}
+			
+		}
+		
+		tbody{
+
+			td{
+				font-size: 0.85rem;
+				@media screen and (min-width: 48em) {
+					padding: 1rem 1rem!important;
+				}
+			}			
+			
+			.tix-column-description{
+				@media screen and (min-width: 48em) {
+					width: 52%;
+    		}
+			}
+			
+			.tix-column-per-ticket{
+				width: 34%;
+				display: inline-block;
+				font-size: 0.85rem;
+				font-weight: bold;
+				@media screen and (min-width: 48em) {
+					width: 22%;
+					display: inline-block;
+					font-weight: normal;
+    		}
+			}
+			
+			.tix-column-quantity{
+				width: 26%;
+				@media screen and (min-width: 48em) {
+					width: 8%;
+    		}
+
+				&::before{
+					content:"数量";
+					font-size: 0.75rem;
+					color:#666;
+					padding-right: 2px;
+					font-weight: normal;
+					@media screen and (min-width: 48em) {
+						content:none;
+    			}
+				}
+			}
+			
+			.tix-column-price{
+				width: 40%;
+					@media screen and (min-width: 48em) {
+						width:18%;
+    			}
+				&::before{
+					content:"価格";
+					font-size: 0.75rem;
+					color:#666;
+					padding-right: 2px;
+					font-weight: bold;
+					@media screen and (min-width: 48em) {
+						content:none;
+    			}
+				}
+			}
+			
+			tr.tix-row-total{
+				border: none;
+				border-bottom: none!important;
+				margin-bottom: 0;
+				font-size: 14px;
+				width: 100%;
+
+				td:first-child{
+					width: 83.2%;
+				}
+				
+				td:nth-child(2){
+					&::before{
+						content:"計";
+						font-size: 0.75rem;
+						color:#666;
+						padding-right: 2px;
+						font-weight: bold;
+						@media screen and (min-width: 48em) {
+							content:none;
+    				}
+					}
+				}
+				
+				@media screen and (min-width: 48em) {
+						border-bottom: 1px solid rgba(52, 175, 165, 0.5) !important;;
+    			}
+			}
+		}
+	}
+	
+	.tix-attendee-form{
+		font-size: 14px;
+		
+		tr{
+			border: none;
+			border-bottom: none!important;
+			margin-bottom: 0px;
+		}
+		
+		td.tix-left{
+			width: 100%;
+			display: block;
+			@media screen and (min-width: 48em) {
+				width: 150px;
+				display: inline-block;
+				vertical-align: middle;
+    	}
+		}
+		
+		.tix-right{
+			width:100%;
+			display: block;
+			@media screen and (min-width: 48em) {
+				width: calc(100% - 150px);
+				display: inline-block;
+				vertical-align: middle;
+    	}
+			
+			input{
+				width: 100%;
+			}
+		}
+	}
+	
+	.tix-submit{
+		select{
+			width: 100px;
+			height: 38px;
+			background: rgba(52, 175, 165, 0.1);
+			text-align: center;
+			margin-bottom: 10px;
+		}		
+	}
 }
