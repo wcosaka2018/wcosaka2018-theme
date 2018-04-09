@@ -1267,11 +1267,6 @@ body:not(.home) .custom-header {
   box-shadow: none;
 }
 
-.page-slug-tickets input[type="radio"],
-.page-slug-tickets input[type="checkbox"] {
-  width: auto;
-}
-
 .page-slug-tickets .tix-order-summary thead .tix-column-description {
   width: 52%;
 }
@@ -1437,6 +1432,10 @@ body:not(.home) .custom-header {
 
 .page-slug-tickets .tix-attendee-form .tix-right input {
   width: 100%;
+}
+
+.page-slug-tickets .tix-attendee-form .tix-right input[type="radio"], .page-slug-tickets .tix-attendee-form .tix-right input[type="checkbox"] {
+  width: auto;
 }
 
 .page-slug-tickets .tix-submit select {
