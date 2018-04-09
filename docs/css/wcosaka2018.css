@@ -1401,41 +1401,55 @@ body:not(.home) .custom-header {
 .page-slug-tickets .tix-attendee-form tr {
   border: none;
   border-bottom: none !important;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
-.page-slug-tickets .tix-attendee-form td.tix-left {
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix-attendee-form td {
+    padding: 0;
+  }
+}
+
+.page-slug-tickets .tix-attendee-form td .tix-left {
   width: 100%;
   display: block;
 }
 
 @media screen and (min-width: 48em) {
-  .page-slug-tickets .tix-attendee-form td.tix-left {
+  .page-slug-tickets .tix-attendee-form td .tix-left {
     width: 150px;
     display: inline-block;
     vertical-align: middle;
   }
 }
 
-.page-slug-tickets .tix-attendee-form .tix-right {
+.page-slug-tickets .tix-attendee-form td .tix-right {
   width: 100%;
   display: block;
 }
 
 @media screen and (min-width: 48em) {
-  .page-slug-tickets .tix-attendee-form .tix-right {
+  .page-slug-tickets .tix-attendee-form td .tix-right {
     width: calc(100% - 150px);
     display: inline-block;
     vertical-align: middle;
   }
 }
 
-.page-slug-tickets .tix-attendee-form .tix-right input {
+.page-slug-tickets .tix-attendee-form td .tix-right br {
+  display: none;
+}
+
+.page-slug-tickets .tix-attendee-form td .tix-right input {
   width: 100%;
 }
 
-.page-slug-tickets .tix-attendee-form .tix-right input[type="radio"], .page-slug-tickets .tix-attendee-form .tix-right input[type="checkbox"] {
+.page-slug-tickets .tix-attendee-form td .tix-right input[type="radio"], .page-slug-tickets .tix-attendee-form td .tix-right input[type="checkbox"] {
   width: auto;
+}
+
+.page-slug-tickets .tix-attendee-form td .tix-right select {
+  width: 100%;
 }
 
 .page-slug-tickets .tix-submit select {
