@@ -1404,9 +1404,13 @@ body:not(.home) .custom-header {
   margin-bottom: 0;
 }
 
+.page-slug-tickets .tix-attendee-form td {
+  padding: 0;
+}
+
 @media screen and (min-width: 48em) {
   .page-slug-tickets .tix-attendee-form td {
-    padding: 0;
+    padding: 1rem;
   }
 }
 
