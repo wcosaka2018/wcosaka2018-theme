@@ -173,11 +173,6 @@
         }
     }
 
-    input[type="radio"],
-    input[type="checkbox"] {
-        width: auto;
-    }
-
     .tix-order-summary {
         thead {
 
@@ -321,6 +316,10 @@
 
             input {
                 width: 100%;
+                &[type="radio"],
+                &[type="checkbox"] {
+                    width: auto;
+                }
             }
         }
     }
