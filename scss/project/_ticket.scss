@@ -264,6 +264,9 @@
 
                 td:first-child {
                     width: 83.2%;
+                    @media screen and (min-width: 48em) {
+                        width: 85.2%;
+                    }
                 }
 
                 td:nth-child(2) {
@@ -304,7 +307,7 @@
                 width: 100%;
                 display: block;
                 @media screen and (min-width: 48em) {
-                    width: 150px;
+                    width: 200px;
                     display: inline-block;
                     vertical-align: middle;
                 }
@@ -313,7 +316,7 @@
                 width: 100%;
                 display: block;
                 @media screen and (min-width: 48em) {
-                    width: calc(100% - 150px);
+                    width: calc(100% - 200px);
                     display: inline-block;
                     vertical-align: middle;
                 }
