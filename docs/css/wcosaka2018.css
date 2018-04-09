@@ -1089,6 +1089,10 @@ body:not(.home) .custom-header {
   font-size: 0;
 }
 
+.page-slug-tickets .tix_tickets_table tbody td {
+  font-size: 0.85rem;
+}
+
 @media screen and (min-width: 48em) {
   .page-slug-tickets .tix_tickets_table tbody td {
     padding: 1rem 1rem !important;
@@ -1189,6 +1193,7 @@ body:not(.home) .custom-header {
 @media screen and (min-width: 48em) {
   .page-slug-tickets .tix_tickets_table tbody .tix-column-quantity {
     width: 12%;
+    text-align: left;
   }
 }
 
@@ -1201,11 +1206,18 @@ body:not(.home) .custom-header {
 
 .page-slug-tickets .tix_tickets_table tbody tr.tix-row-coupon {
   border: none;
-  border-bottom: none;
+  border-bottom: none !important;
   margin-bottom: 0;
+  font-size: 14px;
 }
 
-.page-slug-tickets input {
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix_tickets_table tbody tr.tix-row-coupon {
+    border-bottom: 1px solid rgba(52, 175, 165, 0.5) !important;
+  }
+}
+
+.page-slug-tickets input[type="submit"] {
   width: 100%;
   margin: 0 auto;
   display: inline-block;
@@ -1222,20 +1234,20 @@ body:not(.home) .custom-header {
   font-size: 1rem;
 }
 
-.page-slug-tickets input:hover {
+.page-slug-tickets input[type="submit"]:hover {
   background: #ffffff linear-gradient(to right, rgba(52, 175, 165, 0.7), rgba(180, 132, 184, 0.7));
   color: #ffffff;
   box-shadow: none;
 }
 
 @media screen and (min-width: 48em) {
-  .page-slug-tickets input {
+  .page-slug-tickets input[type="submit"] {
     width: 150px;
     font-size: 0.85rem;
   }
 }
 
-.page-slug-tickets input:active {
+.page-slug-tickets input[type="submit"]:active {
   display: inline-block;
   padding: 1em 2em;
   border-radius: 1.75em;
@@ -1249,8 +1261,183 @@ body:not(.home) .custom-header {
   font-weight: normal;
 }
 
-.page-slug-tickets input:active:hover {
+.page-slug-tickets input[type="submit"]:active:hover {
   background: #ffffff linear-gradient(to right, rgba(52, 175, 165, 0.7), rgba(180, 132, 184, 0.7));
   color: #ffffff;
   box-shadow: none;
+}
+
+.page-slug-tickets .tix-order-summary thead .tix-column-description {
+  width: 52%;
+}
+
+.page-slug-tickets .tix-order-summary thead .tix-column-per-ticket {
+  width: 22%;
+}
+
+.page-slug-tickets .tix-order-summary thead .tix-column-quantity {
+  width: 8%;
+}
+
+.page-slug-tickets .tix-order-summary thead .tix-column-price {
+  width: 18%;
+}
+
+.page-slug-tickets .tix-order-summary tbody td {
+  font-size: 0.85rem;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix-order-summary tbody td {
+    padding: 1rem 1rem !important;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix-order-summary tbody .tix-column-description {
+    width: 52%;
+  }
+}
+
+.page-slug-tickets .tix-order-summary tbody .tix-column-per-ticket {
+  width: 34%;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix-order-summary tbody .tix-column-per-ticket {
+    width: 22%;
+    display: inline-block;
+    font-weight: normal;
+  }
+}
+
+.page-slug-tickets .tix-order-summary tbody .tix-column-quantity {
+  width: 26%;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix-order-summary tbody .tix-column-quantity {
+    width: 8%;
+  }
+}
+
+.page-slug-tickets .tix-order-summary tbody .tix-column-quantity::before {
+  content: "数量";
+  font-size: 0.75rem;
+  color: #666;
+  padding-right: 2px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix-order-summary tbody .tix-column-quantity::before {
+    content: none;
+  }
+}
+
+.page-slug-tickets .tix-order-summary tbody .tix-column-price {
+  width: 40%;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix-order-summary tbody .tix-column-price {
+    width: 18%;
+  }
+}
+
+.page-slug-tickets .tix-order-summary tbody .tix-column-price::before {
+  content: "価格";
+  font-size: 0.75rem;
+  color: #666;
+  padding-right: 2px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix-order-summary tbody .tix-column-price::before {
+    content: none;
+  }
+}
+
+.page-slug-tickets .tix-order-summary tbody tr.tix-row-total {
+  border: none;
+  border-bottom: none !important;
+  margin-bottom: 0;
+  font-size: 14px;
+  width: 100%;
+}
+
+.page-slug-tickets .tix-order-summary tbody tr.tix-row-total td:first-child {
+  width: 83.2%;
+}
+
+.page-slug-tickets .tix-order-summary tbody tr.tix-row-total td:nth-child(2)::before {
+  content: "計";
+  font-size: 0.75rem;
+  color: #666;
+  padding-right: 2px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix-order-summary tbody tr.tix-row-total td:nth-child(2)::before {
+    content: none;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix-order-summary tbody tr.tix-row-total {
+    border-bottom: 1px solid rgba(52, 175, 165, 0.5) !important;
+  }
+}
+
+.page-slug-tickets .tix-attendee-form {
+  font-size: 14px;
+}
+
+.page-slug-tickets .tix-attendee-form tr {
+  border: none;
+  border-bottom: none !important;
+  margin-bottom: 0px;
+}
+
+.page-slug-tickets .tix-attendee-form td.tix-left {
+  width: 100%;
+  display: block;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix-attendee-form td.tix-left {
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.page-slug-tickets .tix-attendee-form .tix-right {
+  width: 100%;
+  display: block;
+}
+
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix-attendee-form .tix-right {
+    width: calc(100% - 150px);
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.page-slug-tickets .tix-attendee-form .tix-right input {
+  width: 100%;
+}
+
+.page-slug-tickets .tix-submit select {
+  width: 100px;
+  height: 38px;
+  background: rgba(52, 175, 165, 0.1);
+  text-align: center;
+  margin-bottom: 10px;
 }
