@@ -296,8 +296,9 @@
         }
 
         td {
+            padding: 0;
             @media screen and (min-width: 48em) {
-                padding: 0;
+                padding: 1rem;
             }
             &.tix-left {
                 width: 100%;
