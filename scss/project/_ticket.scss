@@ -299,7 +299,7 @@
             @media screen and (min-width: 48em) {
                 padding: 0;
             }
-            .tix-left {
+            &.tix-left {
                 width: 100%;
                 display: block;
                 @media screen and (min-width: 48em) {
@@ -308,7 +308,7 @@
                     vertical-align: middle;
                 }
             }
-            .tix-right {
+            &.tix-right {
                 width: 100%;
                 display: block;
                 @media screen and (min-width: 48em) {
