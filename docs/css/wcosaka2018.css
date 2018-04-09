@@ -1374,6 +1374,12 @@ body:not(.home) .custom-header {
   width: 83.2%;
 }
 
+@media screen and (min-width: 48em) {
+  .page-slug-tickets .tix-order-summary tbody tr.tix-row-total td:first-child {
+    width: 85.2%;
+  }
+}
+
 .page-slug-tickets .tix-order-summary tbody tr.tix-row-total td:nth-child(2)::before {
   content: "計";
   font-size: 0.75rem;
@@ -1421,7 +1427,7 @@ body:not(.home) .custom-header {
 
 @media screen and (min-width: 48em) {
   .page-slug-tickets .tix-attendee-form td.tix-left {
-    width: 150px;
+    width: 200px;
     display: inline-block;
     vertical-align: middle;
   }
@@ -1434,7 +1440,7 @@ body:not(.home) .custom-header {
 
 @media screen and (min-width: 48em) {
   .page-slug-tickets .tix-attendee-form td.tix-right {
-    width: calc(100% - 150px);
+    width: calc(100% - 200px);
     display: inline-block;
     vertical-align: middle;
   }
