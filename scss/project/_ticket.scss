@@ -292,33 +292,42 @@
         tr {
             border: none;
             border-bottom: none !important;
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
 
-        td.tix-left {
-            width: 100%;
-            display: block;
+        td {
             @media screen and (min-width: 48em) {
-                width: 150px;
-                display: inline-block;
-                vertical-align: middle;
+                padding: 0;
             }
-        }
-
-        .tix-right {
-            width: 100%;
-            display: block;
-            @media screen and (min-width: 48em) {
-                width: calc(100% - 150px);
-                display: inline-block;
-                vertical-align: middle;
-            }
-
-            input {
+            .tix-left {
                 width: 100%;
-                &[type="radio"],
-                &[type="checkbox"] {
-                    width: auto;
+                display: block;
+                @media screen and (min-width: 48em) {
+                    width: 150px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+            .tix-right {
+                width: 100%;
+                display: block;
+                @media screen and (min-width: 48em) {
+                    width: calc(100% - 150px);
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                br {
+                    display: none;
+                }
+                input {
+                    width: 100%;
+                    &[type="radio"],
+                    &[type="checkbox"] {
+                        width: auto;
+                    }
+                }
+                select {
+                    width: 100%;
                 }
             }
         }
