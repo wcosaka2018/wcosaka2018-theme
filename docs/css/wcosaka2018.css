@@ -1089,6 +1089,10 @@ body:not(.home) .custom-header {
   font-size: 0;
 }
 
+.page-slug-tickets .tix_tickets_table tbody th {
+  font-size: 1rem;
+}
+
 .page-slug-tickets .tix_tickets_table tbody td {
   font-size: 0.85rem;
 }
@@ -1408,6 +1412,10 @@ body:not(.home) .custom-header {
   border: none;
   border-bottom: none !important;
   margin-bottom: 0;
+}
+
+.page-slug-tickets .tix-attendee-form th {
+  font-size: 1rem;
 }
 
 .page-slug-tickets .tix-attendee-form td {
