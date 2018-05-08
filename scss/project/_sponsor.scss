@@ -30,7 +30,8 @@
             }
         }
     }
-    .gold {
+    .gold,
+    .in-kind {
         .sponsor-logo {
             @media screen and (min-width: 30em) {
                 width: calc(100% / 2);
