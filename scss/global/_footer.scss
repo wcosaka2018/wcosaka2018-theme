@@ -14,7 +14,7 @@
         margin: 0 auto;
         position: relative;
         &::before {
-            @include bigIndexBefore("Sponsers");
+            @include bigIndexBefore("Sponsors");
             top: -.4em;
             bottom: auto;
         }
