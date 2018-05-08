@@ -436,7 +436,7 @@ body:not(.home) .site {
   left: 50%;
   transform: translateY(0) translateX(-50%);
   text-transform: uppercase;
-  content: "Sponsers";
+  content: "Sponsors";
   white-space: pre;
   z-index: 1;
   color: rgba(19, 30, 36, 0.05);
@@ -999,13 +999,15 @@ body:not(.home) .custom-header {
 }
 
 @media screen and (min-width: 30em) {
-  .wcb_widget_sponsors .gold .sponsor-logo {
+  .wcb_widget_sponsors .gold .sponsor-logo,
+  .wcb_widget_sponsors .in-kind .sponsor-logo {
     width: calc(100% / 2);
   }
 }
 
 @media screen and (min-width: 48em) {
-  .wcb_widget_sponsors .gold .sponsor-logo {
+  .wcb_widget_sponsors .gold .sponsor-logo,
+  .wcb_widget_sponsors .in-kind .sponsor-logo {
     width: calc(100% / 3);
   }
 }
