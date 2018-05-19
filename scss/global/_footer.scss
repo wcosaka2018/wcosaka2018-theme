@@ -33,7 +33,7 @@
     a{
         position: relative;
     }
-    a:after{
+    &::after{
         z-index: 2;
         display: block;
         position: absolute;
@@ -47,7 +47,7 @@
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        bottom: 30px;
+        bottom: 70px;
         left: 50%;
         -ms-transform: translateX(-50%);
         transform: translateX(-50%)
