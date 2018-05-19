@@ -33,7 +33,7 @@
     a{
         position: relative;
     }
-    &::after{
+    &::before{
         z-index: 2;
         display: block;
         position: absolute;
